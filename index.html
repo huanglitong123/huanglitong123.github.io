@@ -270,414 +270,6 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/09/24/《重构-改善既有代码的设计》读书总结/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="huang">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="huangdao">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2019/09/24/《重构-改善既有代码的设计》读书总结/" itemprop="url">
-                  未命名
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-09-24T00:24:36+08:00">
-                2019-09-24
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>2019-09-20<br>重构代码的根本意义在于 把机器可以看懂的语言，变得人也可以花费比较低的精力去维护。因为代码是随着需求不断变动的，所以必须要可以被人很好的维护。而重构的意义就是让 难维护的代码变得很易于维护，从而降低 人后续开发和维护的成本，提高生产效率。如果一个代码从此再也不需要更改和维护，那是没有重构他的必要的。<br>重构代码，首先识别坏味道的代码，然后运用工具，将代码的味道改变。<br>重构的过程应该是，提交一次，修改一处，测试一次，如此迭代循环。</p>
-<p>代码的坏味道排序：</p>
-<ol>
-<li>神秘命名（变量，函数，类别的名称，需要让使用的人很简单的知道这个内容的含义。如果无法抽象出来，很可能是 内容需要重构）</li>
-<li>重复代码（可以看见很多重复的代码，这样的时候往往需要抽象逻辑，进行函数化）</li>
-<li>过长函数 </li>
-<li>累赘的元素，过长参数列表（参数是否应该合并）</li>
-<li>全局数据 （使用方便，维护坑死，无法保证数据的一致性，无法找到何地方进行了变量的修改）</li>
-<li>可变数据 （数据多处修改，难以维护）</li>
-<li>发散式变化 、散弹枪修改和依恋情节 （模块解耦较差，导致一处变化，多处修改）</li>
-<li>数据泥团（数据思路不清）</li>
-<li>循环语句 （pipe化 和 map、apply化）</li>
-<li>临时字段 </li>
-<li>过大的类，异曲同工的类</li>
-<li>注释</li>
-</ol>
-<p>重构办法很多，但目的都是将 代码改的让人好懂，易懂。别急着为效率担心，先看得懂，再优化。<br>主要方法有：提炼函数，变量，改名，改参数，组合，拆分，封装，搬移，重组数据，简化条件逻辑，重构API,处理继承关系。</p>
-<p>内容虽多，也可精炼，关键还是要实践！<br>接下来增加一些开发的学习，如此可以加强自己代码也！</p>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/09/24/《人月神话》读书总结/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="huang">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="huangdao">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2019/09/24/《人月神话》读书总结/" itemprop="url">
-                  未命名
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-09-24T00:24:22+08:00">
-                2019-09-24
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>2019-09-22<br>此书主要描述的是编程系统产品行业的一些现场，约束和解决办法。本书的核心要点就是 软件开发 是一件很难的事情，尤其是大规模协同开发。<br>其中有一些核心要点，可以仔细回味回味。</p>
-<ol>
-<li>编程系统产品是个人独立开发使用的程序的9倍。软件产品化是3倍，构建成系统又是3倍。</li>
-<li>编程让人快乐。主要是创造力、有用性、想象力、独特性、思维性。</li>
-<li>难点：追求完美、有些目标是别人设定的、艰苦、越接近成功完成越慢、过时。</li>
-<li>缺少合理的时间进度 是项目延期的主要原因</li>
-<li>某些任务无法在不损害结果的情况下加快速度。</li>
-<li>编程人员容易乐观</li>
-<li>思维存在缺陷，总会有bug</li>
-<li>人月是危险的估算，人员数量和时间并不是可以相互替换的。</li>
-<li>增加人员，会引发额外工作量：任务重新分配、中断、培训和相互沟通。<br>10.进度安排，1/3计划，1/6编码，1/4构件测试，1/4系统测试<br>11.Brooks法则：为进度落后的项目增加人手，只会使进度更加落后。</li>
-<li>优秀的程序员的生产率是较差程序员的10倍。</li>
-<li>小型、精干的队伍是最好的，思绪尽可能少</li>
-<li>两个人团队，其中一人是领导者，是最佳的人员使用方法。</li>
-<li>对于大型系统而言，小型精干的队伍太慢了。</li>
-<li>一个团队，应该像外科手术队伍那样。</li>
-<li>概念的完整性是系统设计中最重要的考虑因素。</li>
-<li>好的产品应该在功能性和理解性上做取舍，而不仅仅是丰富的功能。</li>
-<li>设计必须由一个人或者具有共识的小团队来完成。</li>
-<li>大型项目，体系结构和具体实现分离 是获得概念完整性的有力方法。</li>
-<li>尽早交流和持续沟通使得设计人员有较好的成本意识，开发人员对设计有信心。</li>
-<li>交流，项目工作手册，组织架构对于项目至关重要。<br>23.程序规模越大，时间越长，指数为1.5，而不是线性的。</li>
-<li>高级语言和交互式编程 提高了开发效率</li>
-</ol>
-<p>此书是好书，但对于目前的我而言，是一本知识层面的指导书籍，拓展眼界用的。其内容只有涉及到开发者方面的，我比较有认识和感知。而涉及结构设计以及PM,文档化这块，其实我的感知并不是很清楚。<br>估计要随着我项目经验的增加，和环境的改变，才会认识的更加深刻吧。</p>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/09/24/链家网爬虫数据分析模仿路人甲的南京分析/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="huang">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="huangdao">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2019/09/24/链家网爬虫数据分析模仿路人甲的南京分析/" itemprop="url">
-                  未命名
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-09-24T00:12:39+08:00">
-                2019-09-24
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>基本材料<br>路人甲南京分析<br>工具：Python，Tableau</p>
-<p>爬虫<br>def main 控制全部</p>
-<p>第一步：判断lianjia_’city’_url.txt是否存在，如果不存在，则<br>调用def get_base_url，class parserurl，def save_txt来获取基本的url链接，并将房源的链接爬下来，并存储</p>
-<p>第二步：判断bad_url是否存在，如果否<br>调用def read_txt<br>如果是<br>调用def read_bad_txt<br>(这里逻辑还没考虑完全)</p>
-<p>zufang_queue已经准备完全了</p>
-<p>第三步：调取class paser，爬取zufang_queue的链接，解析获得各个字段，保存zufang_info，如果有无法爬取，解析的，保存入bad_url<br>第四步：def save_txt，def save_csv</p>
-<p>Tableau分析<br>南京1[<a href="http://wx3.sinaimg.cn/mw690/af94961dgy1fj6n9d4narj20u10n340x.jpg" target="_blank" rel="external">http://wx3.sinaimg.cn/mw690/af94961dgy1fj6n9d4narj20u10n340x.jpg</a>]<br>南京2[<a href="http://wx3.sinaimg.cn/mw690/af94961dgy1fj6n9dxodyj20tp0mq76a.jpg" target="_blank" rel="external">http://wx3.sinaimg.cn/mw690/af94961dgy1fj6n9dxodyj20tp0mq76a.jpg</a>]<br>南京3[<a href="http://wx3.sinaimg.cn/mw690/af94961dgy1fj6n9ejmy1j20tr0n0dgn.jpg" target="_blank" rel="external">http://wx3.sinaimg.cn/mw690/af94961dgy1fj6n9ejmy1j20tr0n0dgn.jpg</a>]<br>杭州1[<a href="http://wx4.sinaimg.cn/mw690/af94961dgy1fj6n9h6glyj20tu0mz0vc.jpg" target="_blank" rel="external">http://wx4.sinaimg.cn/mw690/af94961dgy1fj6n9h6glyj20tu0mz0vc.jpg</a>]<br>杭州2[<a href="http://wx1.sinaimg.cn/mw690/af94961dgy1fj6n9hkcbij20hv0eo0u1.jpg" target="_blank" rel="external">http://wx1.sinaimg.cn/mw690/af94961dgy1fj6n9hkcbij20hv0eo0u1.jpg</a>]</p>
-<p>代码<br>疑问<br>直接按照房子的租价并不是很权威，应该利用 租金/房子面积 对城市的各地区进行分析<br>房源太多的时候，可以适当根据行政区来进行划分分析<br>根据每个区域的高层、低层房源的数据判断出这个区域的发展趋势<br>决定一个房源价格高低的印象因素是什么？</p>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/09/24/天池比赛血糖预测收获总结/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -701,7 +293,7 @@
               
                 
                 <a class="post-title-link" href="/2019/09/24/天池比赛血糖预测收获总结/" itemprop="url">
-                  未命名
+                  血糖预测收获总结
                 </a>
               
             
@@ -717,7 +309,7 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-09-24T00:11:58+08:00">
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-09-24T00:40:15+08:00">
                 2019-09-24
               </time>
             
@@ -808,560 +400,6 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/09/24/计划力和执行力/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="huang">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="huangdao">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2019/09/24/计划力和执行力/" itemprop="url">
-                  未命名
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-09-24T00:11:24+08:00">
-                2019-09-24
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>计划力和执行力的增强<br>研究生以来，很长时间中，我都没有制定计划或者制定了计划却没有执行下去。我脑海中有很多目标想去做，但是经常是想一想，然后跟着感觉走，然后做了一段时间之后，没有及时的正向反馈，以及没有制定一个长期的计划，导致经常半途而废。这不仅反映了我执行力的薄弱，同时还反映我计划力的薄弱。如此看来，其实我这整整一年的时间，其实并没有多少实质性的进步，只是会了一些理论，会一些软件，对很多东西还是一知半解，这种状态深深的困扰我。</p>
-<p>与我以前在大学时候相比，那时候对自己有一种狠心，有一种拼命的执行力去督促自己，而现在呢，整天想着毕业了找个20万的工作，然后就这样度过了一辈子，我心中的豪情依旧磨灭了，我失去了奋发向上的斗志，我其实很弱，却认为自己很强。这是多么可笑啊。</p>
-<p>增强方式<br>重新开始制定科学的计划，并且督促自己执行，将自己的精力和时间充分的利用起来，让自己前进，而不是停留在原地。</p>
-<p>从目前看来，对我最相关的即将毕业的准备，我已经决定了走机器学习的路，那就要好好学，好好实践。同时，英语一直是我的短板，我要想办法增加。在机器学习实践的同时，要准备来年的春招实习。同时人的一生都需要发展自己的思维能力，因此也不可以懈怠。</p>
-<p>机器学习实战计划</p>
-<p>英语学习计划</p>
-<p>实习准备计划（未定）</p>
-<p>思考思维探索计划</p>
-<p>机器学习实战计划<br>目标：增强自己对于机器学习各大算法的理解，并能实践</p>
-<p>方法：机器学习实战书籍+![机器学习]教学版[<a href="https://space.bilibili.com/97678687/#/channel/detail?cid=22486" target="_blank" rel="external">https://space.bilibili.com/97678687/#/channel/detail?cid=22486</a>]</p>
-<p>计划时间：1个月</p>
-<p>计划结果：一份学习笔记+一个github代码库</p>
-<p>英语学习计划<br>目标：增加英语阅读能力</p>
-<p>方法：阅读编程类英语书籍</p>
-<p>计划时间：未定</p>
-<p>计划结果：能够正常阅读英语文章和书籍</p>
-<p>思考思维探索计划<br>目标：增强思维能力</p>
-<p>方法: 针对一个问题，思考，读书，讨论</p>
-<p>计划时间: 一辈子</p>
-<p>计划结果：强大的思维能力</p>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/09/24/IDL使用总结/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="huang">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="huangdao">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2019/09/24/IDL使用总结/" itemprop="url">
-                  未命名
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-09-24T00:10:56+08:00">
-                2019-09-24
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>IDL对于遥感影像的处理使用是非常方便的，这里主要总结一些使用技巧方面的。</p>
-<p>nc文件的读取<br>PRO nc_open<br>;定义文件路径<br>MyRootDir=’E:\Documents\Desktop\’<br>MyRootDir2=’F:\huang\课程\海洋数值模拟\Aqua\CHL\2015\’<br>MyRootDir3=’E:\nc_aqua_30\test\’<br>MyRootDir5=’E:\nc_snpp_sst\’<br>MyRootDir4=’i:\nc\’<br>;遍历文件夹<br>filearr = file_search(MyRootDir,’*.nc’,count=num);<br>  FOR fileindex=0,num-1,1 DO BEGIN<br>    print ,filearr[fileindex]<br>    nid = ncdf_open(filearr[fileindex], /nowrite )<br>    ; inquire about this file; returns structure<br>    file_info = ncdf_inquire( nid )<br>    ; print out the dimensions of this file<br>    FOR dimid=0, file_info.ndims -1 DO BEGIN<br>      ncdf_diminq, nid, dimid, name, size<br>      print, ‘ —&gt; dimension ‘ + name  + ‘ is: ‘, size<br>    ENDFOR</p>
-<pre><code>FOR varid=0, file_info.nvars-1 DO BEGIN
-  ; inquire about the variable; returns structure
-  var = ncdf_varinq( nid, varid )
-  print,&apos;var is &apos;,var
-  print,&apos;========================&apos;
-  ;read all attributes
-  FOR var_att_id=0,var.natts -1 DO BEGIN
-    att_name = ncdf_attname( nid, varid, var_att_id )
-    print,&apos;attname is &apos;,att_name
-    ncdf_attget, nid, varid, att_name, tematt
-    print,string(tematt)
-  ENDFOR
-ENDFOR
-parentId = NCDF_GROUPSINQ(nid)
-FOR num=0,(size(parentId))(1) -1 DO BEGIN
-  parentName = NCDF_GROUPNAME(parentId[num])
-  print, string(num) +&apos; ---&amp;gt; parent group Name &apos; + parentName 
-ENDFOR
-num = 2   
-
-;read sst
-sstid = ncdf_varid(parentId[num], &apos;chlor_a&apos;)
-ncdf_varget,parentId[num], sstid, sst
-landindex=where(sst eq min(sst))
-sst[landindex]=-1
-
-landindex2=where(sst ge 15)
-sst[landindex2]=15
-sst=reverse(sst,1)
-;sst2=sst[6960:7680,2640:3120]
-Img=image(sst,rgb_table=77,title=filearr(fileindex),grid_units=1,POSITION=[0.1,0.2,0.9,0.9])
-xaxis=axis(&apos;X&apos;,LOCATION=[0,0],AXIS_RANGE=[110,140],MINOR=0, MAJOR=10,COORD_TRANSFORM=[110,30.0/720.0],title=&apos;Longitude(°)&apos;)
-yaxis=axis(&apos;Y&apos;,LOCATION=[0,0],AXIS_RANGE=[20,40],MINOR=0, MAJOR=7,COORD_TRANSFORM=[20,20.0/480.0],title=&apos;Latitude(°)&apos;)
-;xaxis=axis(&apos;X&apos;,LOCATION=[0,0],AXIS_RANGE=[-180,180],MINOR=0, MAJOR=19,COORD_TRANSFORM=[-180,360.0/4096.0],title=&apos;Longitude(°)&apos;)
-;yaxis=axis(&apos;Y&apos;,LOCATION=[0,imap0],AXIS_RANGE=[-90,90],MINOR=0, MAJOR=7,COORD_TRANSFORM=[-90,180.0/2048.0],title=&apos;Latitude(°)&apos;)
-c1 = COLORBAR(TARGET=Img, ORIENTATION=0,TITLE=&apos;(K) &apos;,POSITION=[0.1,0.1,0.9,0.15])
-;Img.save,filearr(fileindex)+&apos;.bmp&apos;
-</code></pre><p>  ENDFOR<br>END<br>以上是一个复杂的nc文件读取的案例，主要使用的是oceancolor上面的nc文件。<br>一个nc文件的主要框架是部分变量+Group数据，有时候数据保存在变量里（这也是大部分的nc文件思路），一般使用ncdf_varid就解决了（这样的解决思路网络上都有）。</p>
-<p>nid = ncdf_open(filearr[fileindex], /nowrite )<br>chlid = ncdf_varid(nid, ‘chlor_a’)<br>但还有时候会保存在Group里面，通常我们可以发现文件大小挺大，但是利用ncdf_varid就是找不到数据，这时候需要看文件的数据是不是保存在了Group里面了。通过查询IDL官方文档，我发现了NCDF_GROUPSINQ，NCDF_GROUPNAME这两个函数，例子如下。</p>
-<p>parentId = NCDF_GROUPSINQ(nid)<br>FOR num=0,(size(parentId))(1) -1 DO BEGIN<br>  parentName = NCDF_GROUPNAME(parentId[num])<br>  print, string(num) +’ —&gt; parent group Name ‘ + parentName<br>ENDFOR<br>IDL有一些细节，参数需要自己注意，大家可以自己去查文档，我这里面主要是给出思路和关键词，附录的资料大家可以自己查看。</p>
-<p>matlab对比：<br>IDL读取的操作相对于matlab而言就太复杂了，matlab只需要简单的命令就能将数据读取出来，那为啥还要用IDL呢？因为IDL画图，以及遥感数据处理的众多源代码都是IDL写的，IDL在遥感处理上比较有群众基础和技术积累，所以IDL一直在使用。大家可以通过附录的链接进行对比分析。<br>附录：<br>matlab<br><a href="https://cn.mathworks.com/help/matlab/ref/ncread.html" target="_blank" rel="external">https://cn.mathworks.com/help/matlab/ref/ncread.html</a><br><a href="https://cn.mathworks.com/help/matlab/import_export/importing-network-common-data-form-netcdf-files-and-opendap-data.html" target="_blank" rel="external">https://cn.mathworks.com/help/matlab/import_export/importing-network-common-data-form-netcdf-files-and-opendap-data.html</a><br><a href="https://cn.mathworks.com/help/matlab/ref/ncdisp.html" target="_blank" rel="external">https://cn.mathworks.com/help/matlab/ref/ncdisp.html</a><br>IDL<br><a href="http://malagis.com/idl-remote-sensing-reads-netcdf.html" target="_blank" rel="external">http://malagis.com/idl-remote-sensing-reads-netcdf.html</a><br><a href="https://www.harrisgeospatial.com/docs/NCDF_GROUPNAME.html" target="_blank" rel="external">https://www.harrisgeospatial.com/docs/NCDF_GROUPNAME.html</a></p>
-<p>颜色表<br>通常我们会利用IDL进行作图，这样就离不开使用IDL自带的颜色表。IDL颜色表不仅多，而且可以自己定制，大家只要学会如何操作即可。<br>我主要讲一点，IDL颜色表的操作要优于matlab，我通过对比发现，matlab颜色表不仅少，而且不会自动调节，只会根据最大，最小值，然后间断颜色，不像IDL会根据数据分布来进行颜色表区分，使得数据的区域分布显现的更好，所以如果颜色表作图，更推荐IDL。<br>附录:<br><a href="http://malagis.com/idl-color-table.html" target="_blank" rel="external">http://malagis.com/idl-color-table.html</a></p>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/09/24/统计学习方法-第三四章k近邻和朴素贝叶斯法习题/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="huang">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="huangdao">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2019/09/24/统计学习方法-第三四章k近邻和朴素贝叶斯法习题/" itemprop="url">
-                  未命名
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-09-24T00:10:14+08:00">
-                2019-09-24
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>总<br>k近邻法是基本且简单的分类与回归方法，对给定的训练实例点和输入实例点，首先确定输入实例点的k个最近邻训练实例点，然后利用这k个训练实例点的类的多数来预测输入实例点的类。<br>三要素：距离度量方法，k值选择，分类决策规则。距离一遍用欧式距离，以及更一般的Lp距离。k值小，模型复杂，k值大，模型简单。k值的选择反应近似误差和估计误差的权衡，通常由交叉验证来选择最优的k。分类决策是多数表决，对应于经验风险最小化。<br>利用kd树可以方便搜索最近k个点（二叉树的一种）。<br>（第四章略）</p>
-<p>3.1<br>k为1时候，其实很简单，垂直平分线的交点围成的面积就是区域，每个点都有自己的区域，落在区域内的点就是该店的类型。</p>
-<p>示意图<br>示意图2</p>
-<p>k为2时，和1有些不同，可以从3个点的情况开始考虑，延长平分线。<br>为了区分归属，我把三个点都标上了颜色，而被划分的6个区域，其最近的2个点的颜色都在图上标出，其实就是一个二维层面的三次切分，取其中最近的2个点。这样就得到了空间划分。<br>实际上4个点，5个点，n个点都是同样的道理，这个算法不一定是最优的，但是是可以推广到n个点的普适算法，而且又由于k的取值不会过大，因此不会造成大数灾难。<br>示意图3</p>
-<p>大量引用</p>
-<p>3.2<br>根据kd树查找运算，结果是(2,3)</p>
-<p>3.3<br>kd树的k邻搜索算法<br>输入：已构造的kd树：目标点x;<br>输出：x的k邻。</p>
-<p>第一种：<br>（1）在kd树中找出包含目标点x的叶结点：从根结点出发，递归的向下访问kd树。若目标点x当前维的坐标小于切分点的坐标，则移动到左子结点，否则移动到右子节点，直到子节点为叶结点为止。<br>（2）以此叶节点为“当前最近点”。<br>（3）递归的向上回退，在每个结点进行以下操作：<br>（a） 如果该结点保存的实例点比当前最近点距离目标点更近，则以该实例点为“当前最近点”。<br>（b）当前最近点一定存在于该结点一个子结点对应的区域。检查该子结点的另一子结点对应的区域是否有更近的点。 具体的，检查另一子结点对应的区域是否与以目标点为球心，以目标点与“当前最近点”间的距离为半径的超球体相交。 如果相交，可能在另一个子结点对应的区域内存在距离目标点更近的点，移动到另一个子结点，接着，递归地进行最近邻搜索。<br>如果不相交，向上回退。<br>（4）保存最近点，搜索第2-k近点，重复1-3步骤，忽视已经保存过的节点.</p>
-<p>第二种：<br>（1）在kd树中找出包含目标点x的叶结点：从根结点出发，递归的向下访问kd树。若目标点x当前维的坐标小于切分点的坐标，则移动到左子结点，否则移动到右子节点，直到子节点为叶结点为止。<br>（2）以此叶节点为“当前最近点”，保存到长度为k的数组中。<br>（3）递归的向上回退，在每个结点进行以下操作：<br>（a） 如果该结点保存的实例点比当前最近点距离目标点更近，则以该实例点为“当前最近点”，保存到长度为k的数组中。<br>（b）当前最近点一定存在于该结点一个子结点对应的区域。检查该子结点的另一子结点对应的区域是否有更近的点。 具体的，检查另一子结点对应的区域是否与以目标点为球心，以目标点与“当前最近点”间的距离为半径的超球体相交。 如果相交，可能在另一个子结点对应的区域内存在距离目标点更近的点，移动到另一个子结点，接着，递归地进行最近邻搜索，保存到长度为k的数组中。如果不相交，向上回退。</p>
-<p>总结：找到最近的实例点，然后再找次近的，向外迭代即可。</p>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/09/24/统计学习方法第二章感知机习题/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="huang">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="huangdao">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2019/09/24/统计学习方法第二章感知机习题/" itemprop="url">
-                  未命名
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-09-24T00:09:42+08:00">
-                2019-09-24
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>总<br>感知机是根据输入实例的特征变量x对其进行二类分类的线性分类模型，f(x)=sign(wx+b)，感知机模型对应于输入空间中的分离超平面wx+b=0<br>学习侧脸是极小化损失函数，也就是误分类点到分离超平面的总距离。（其实就是空间切割，且距离最小）</p>
-<p>习题解答</p>
-<p>2.1<br>感知机为啥不能表示异或？<br>这其实非常明显，在平面坐标系画图，只有y=0，和x=0，除去0点的分类结果是1，其他都是0，那么如何画一条线，使得两条线线性可分呢？明显没有。</p>
-<p>2.2 略<br>2.3 线性可分==凸壳互不相交<br>证明：1.如果相交，不存在一条线使其线性可分 2.如果线性可分，则必不相交</p>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/09/24/剑指offer第二章面试需要的基础知识总结/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1385,7 +423,7 @@ c1 = COLORBAR(TARGET=Img, ORIENTATION=0,TITLE=&apos;(K) &apos;,POSITION=[0.1,0.1
               
                 
                 <a class="post-title-link" href="/2019/09/24/剑指offer第二章面试需要的基础知识总结/" itemprop="url">
-                  未命名
+                  《剑指offer》读书总结第二章
                 </a>
               
             
@@ -1401,7 +439,7 @@ c1 = COLORBAR(TARGET=Img, ORIENTATION=0,TITLE=&apos;(K) &apos;,POSITION=[0.1,0.1
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-09-24T00:09:09+08:00">
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-09-24T00:40:14+08:00">
                 2019-09-24
               </time>
             
@@ -1556,7 +594,7 @@ c1 = COLORBAR(TARGET=Img, ORIENTATION=0,TITLE=&apos;(K) &apos;,POSITION=[0.1,0.1
               
                 
                 <a class="post-title-link" href="/2019/09/24/剑指offer第一章面试的流程总结/" itemprop="url">
-                  未命名
+                  《剑指offer》读书总结第一章
                 </a>
               
             
@@ -1572,7 +610,7 @@ c1 = COLORBAR(TARGET=Img, ORIENTATION=0,TITLE=&apos;(K) &apos;,POSITION=[0.1,0.1
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-09-24T00:08:19+08:00">
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-09-24T00:40:13+08:00">
                 2019-09-24
               </time>
             
@@ -1620,6 +658,920 @@ c1 = COLORBAR(TARGET=Img, ORIENTATION=0,TITLE=&apos;(K) &apos;,POSITION=[0.1,0.1
 <p>1.3.2 技术面试环节<br>5大素质：</p>
 <p>扎实的基础素质:编程语言，数据结构，算法<br>高质量代码：边界条件，特殊输入，编码习惯，测试习惯<br>清晰思路 ： 分析问题的能力（画图形象化，举例距离化，分解简单化）<br>优化效率能力：优化时间和空间效率，通常是两者均衡，在均衡后，再想办法从数据结构上优化，使得二者之一不变，另一个更优（查找，排序，分治，贪心，递归，动态规划）<br>优秀的综合能力：也就是持续发展的能力，看面试者有没有持续学习等各方面能力（沟通能力，学习能力，知识迁移能力）<br>1.3.3 提问<br>细节：<br>不要问和自己职位没有关系的问题，不要问薪水，不要打听面试结果<br>推荐问与应聘的职位或者项目相关和题目，也可以事先了解，准备好问题。</p>
 <p>1.4 总结<br>面试也，现能力也。平时苦练能力，面试才有底。<br>技巧存于心，不强求用，但求一心。</p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/09/24/链家网爬虫数据分析模仿路人甲的南京分析/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="huang">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="huangdao">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2019/09/24/链家网爬虫数据分析模仿路人甲的南京分析/" itemprop="url">
+                  未命名
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-09-24T00:40:04+08:00">
+                2019-09-24
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/09/24/计划力和执行力/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="huang">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="huangdao">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2019/09/24/计划力和执行力/" itemprop="url">
+                  计划力和执行力
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-09-24T00:40:02+08:00">
+                2019-09-24
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>计划力和执行力的增强<br>研究生以来，很长时间中，我都没有制定计划或者制定了计划却没有执行下去。我脑海中有很多目标想去做，但是经常是想一想，然后跟着感觉走，然后做了一段时间之后，没有及时的正向反馈，以及没有制定一个长期的计划，导致经常半途而废。这不仅反映了我执行力的薄弱，同时还反映我计划力的薄弱。如此看来，其实我这整整一年的时间，其实并没有多少实质性的进步，只是会了一些理论，会一些软件，对很多东西还是一知半解，这种状态深深的困扰我。</p>
+<p>与我以前在大学时候相比，那时候对自己有一种狠心，有一种拼命的执行力去督促自己，而现在呢，整天想着毕业了找个20万的工作，然后就这样度过了一辈子，我心中的豪情依旧磨灭了，我失去了奋发向上的斗志，我其实很弱，却认为自己很强。这是多么可笑啊。</p>
+<p>增强方式<br>重新开始制定科学的计划，并且督促自己执行，将自己的精力和时间充分的利用起来，让自己前进，而不是停留在原地。</p>
+<p>从目前看来，对我最相关的即将毕业的准备，我已经决定了走机器学习的路，那就要好好学，好好实践。同时，英语一直是我的短板，我要想办法增加。在机器学习实践的同时，要准备来年的春招实习。同时人的一生都需要发展自己的思维能力，因此也不可以懈怠。</p>
+<p>机器学习实战计划</p>
+<p>英语学习计划</p>
+<p>实习准备计划（未定）</p>
+<p>思考思维探索计划</p>
+<p>机器学习实战计划<br>目标：增强自己对于机器学习各大算法的理解，并能实践</p>
+<p>方法：机器学习实战书籍+![机器学习]教学版[<a href="https://space.bilibili.com/97678687/#/channel/detail?cid=22486" target="_blank" rel="external">https://space.bilibili.com/97678687/#/channel/detail?cid=22486</a>]</p>
+<p>计划时间：1个月</p>
+<p>计划结果：一份学习笔记+一个github代码库</p>
+<p>英语学习计划<br>目标：增加英语阅读能力</p>
+<p>方法：阅读编程类英语书籍</p>
+<p>计划时间：未定</p>
+<p>计划结果：能够正常阅读英语文章和书籍</p>
+<p>思考思维探索计划<br>目标：增强思维能力</p>
+<p>方法: 针对一个问题，思考，读书，讨论</p>
+<p>计划时间: 一辈子</p>
+<p>计划结果：强大的思维能力</p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/09/24/网易及丁磊的成长之路/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="huang">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="huangdao">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2019/09/24/网易及丁磊的成长之路/" itemprop="url">
+                  网易及丁磊的成长之路
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-09-24T00:40:01+08:00">
+                2019-09-24
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>网易及丁磊的成长之路<br>网易之路很大部分是由丁磊走出来的，因此打上了很深的丁磊的印记。网易从创立，发展，到成熟，其实也就是丁磊思想的发展，挫折，成熟的过程。</p>
+<p>前言<br>丁磊在大学和电信局工作的日子里面完成了他原始的技术积累和学习方法积累。凭借着自己的爱好和对互联网的兴趣，开始走上了创业的道路。其发展的道路是清晰的。<br>从大学开始一直到他离开飞捷，是他利用自己能力进行实践的过程，他将他在大学和电信局学到的知识，在广州的大地上先后实践了一遍，先是在外资工资当技术助理，又到飞捷当技术助理，但是当飞捷的理念和他不一样的时候，他就选择了离开。离开之后，他在自己创业和继续找其他的公司的选择中迷茫了下，也许并不迷茫，他实践了这么久，他已经充分了解了市场和公司的运营和发展，也积累了很多的认识。接下来他就开始将他的思想之花实践的过程。这时候的他还是单纯的从技术的角度去思考问题，也就是互联网能满足人们的需求，毫无疑问，互联网给通信方式带来了翻天覆地的变化。在他实践的过程中，BBS聚集了很多人气，他想将这一点做的更好，但是他却没有设备，带宽，场地。这是他电信局的经验给他带来了机会，他选择和电信局合作，他提供上网后的服务，从而吸引网民增长上网时间，从而和电信局实现双赢。<br>在BBS聚集了人气之后，丁磊说他觉得自己电脑18G硬盘空间浪费了很可惜，便开始学习别人，提供免费的个人主页，这点在当时只有国外的网站才有，当时丁磊想如果我们也能提供的话，那么将会给BBS带来更多的人气。在开始阶段，很少人知道网易，知名度并不高，网民也不了解这项服务，很少人将主页放在网易上。好的产品知名度不高怎么办，那肯定是宣传了，网络时代的产品，有人说好，一传十，十传百，用户自然就多了起来。丁磊知道的是互联网会带来巨大的变化，给人更好的服务，但是具体的服务如何建立，以及服务如何盈利，他并不知道。他知道的是技术可以赚钱，因为他自身就是靠写软件来赚钱的，服务是他愿意做的一种服务，也可以算是一种业余的活动。这时候网易公司还没有成立，等到BBS火了起来，个人主页也火了起来，丁磊在这时候创立了公司。<br>其实丁磊这时候还是在想，做什么呢？公司做什么呢？最开始还是学的是老东家的本事，写软件，卖软件吧，卖一套多少钱，软件能够直接带来利润。那做什么软件呢？丁磊一直在学习，国外这时候，有搜索和邮箱，丁磊想了想，我们也可以做啊，做了下搜索，但是很可惜，搜索当时在中国还是太超前了，当时中文站点还只有200个，搜索引擎并没有什么用。有失败就有成功，丁磊选的邮箱恰恰很好的解决了一个关键的问题。也就是人们在网络上，存在一个我是谁的问题？别人怎么知道我是我？邮箱的地址就代表了我是我，相当于一个邮寄地址，只是这个地址很快，基本上1分钟内肯定到达，这样的产品怎么可能不受欢迎。相比于此时，美国存在Yahoo和Hotmail邮箱，不能否认的是，网易肯定借鉴了美国人的做法，从而实现本土化。但是他想购买一套Hotmail系统，因为太贵，没有成功。没办法，只能自己研发了。在以后的日子里，当丁磊想做游戏时，也是这样的，外国的游戏不给代理，就只能自己想办法做研发。这样的一套邮件系统给网易带来的第一次成功，让公司找到了生存下去的理由。<br>公司的网站和门户这时候也有了起色和发展，门户似乎找到自己自己的盈利方式，就是通过做广告的方式，于是丁磊将自己公司的主页开始改版，从网站转型为门户，门户其实并不赚钱，但是带来了流量和用户。<br>这时候的网易其实走到了一个边界点。随着门户的兴起，华尔街的投资人闻风而动，都想来网易投资，网易从1999年年初到2000年6月30日上市，一共融资了1亿1500万美金。网易这里已经完全是中国的互联网巨头了，</p>
+<p>挫折<br>但随之而来的给网易的却是迎头痛击，2000年9月到2002年，是网易最痛苦的一年，也是网易浴火重生的一年。网易乐极生悲，在经历过了上市之后，却迎来了美国互联网泡沫的破灭，纳斯达克指数狂跌。2000年3月10日：创造5048.62点的最高记录。13日，周一，由于互联网泡沫破裂，大规模抛售科技股票，在纳斯达克上市的企业有500家破产，40%退市，80%的企业跌幅超过80%，蒸发了3万亿美金。<br>《巴伦周刊》上的一篇报道《Burning Up》基于207家互联网公司的研究报告指出，将会有51家网络公司，现金流面临枯竭，而且股价下行＋高管套现＋投资风险厌恶上升＋市场资金缩减＋再融资市场的冷却，多重效应叠加下，这些公司的再融资问题无法得到解决，最终将会面临行业的大洗牌，破产加重组。这给全球的互联网公司都带来了重创，人们盲目相信新科技带来的商业模式，认为企业的现金流可以在短期内被解决，一旦被证明是不切实际之后，便会带来整个产业概念股的崩盘。<br>这样的挫折对网易而言未尝不是好处，当时的网易，现金流还很稳健，还没有陷入到烧钱的模式里面不能自拔，就被市场的破坏迎头痛击，让网易开始反思自己的问题所在。这还只是外患，但是对网易来说，并不是最重要的，网易没上市之前也活的好好的。虽然上市了，股票不能变现就是一堆纸，真正决定公司价值的还是公司的产品和利用。没有一个投资人会因为一家好公司股价低而不觉得狂喜，关键是其能否认识到公司当前的股价能否配得上其实际的价值。这一点决定了投资者的眼光！一个投资者看见了大家都看见的算不上什么，关键是其要看见别人看不见的。<br>相比较股票狂跌的外患而言，网易迎来了第二个外患，网易因为财务报表的问题，被停牌。这个说是外患，但是其实是内部组织带来的问题，网易的内部出现了问题。其实网易在快速发展过程中，发展的并不踏实，也并不完善，丁磊对于财务和管理的基本认识还没有提高，还只是一个小公司的态度和想法。虽然说引进了很多国际人才，但是一个管理者不了解自己的企业，不了解自己企业的产品，心思和丁磊也不一样，怎么可能管理好企业呢？这是机构性的失职，也是网易没有建立一个合理的公司制度的失职。<br>观史言语，内忧总是和外患同时发生，其实内忧早就有了，只是内部的矛盾在外部环境良好的时候并不会激化，但是外部环境一旦发生变化，内部的矛盾受到了激化，要么将矛盾解决，要么在矛盾中死去。<br>丁磊就在矛盾的中心，丁磊建立的网易还没有明白，谁是我们的敌人，谁是我们的朋友？以及组织如何发展？如何稳健？这时候的网易面临很多的问题，内忧外患，其中首先要解决的就是管理层带来的财务问题，以及进而导致的停牌问题。其次更重要的就是企业的战略问题，网易要到哪里去？<br>企业遇到问题，要么死掉，要么解决难关，一飞冲天。这时候的网易无疑是幸运的，成功的活了下来。</p>
+<p>沉思<br>丁磊肯定也犹豫了很久，纠结过要不要把企业卖掉等等。但是问题摆在那里，需要解决，丁磊的理工科思维帮了他，做错了，不要紧，关键是反思，然后重来。他需要一个人来帮他解决这个问题，也需要时间来解决自己心中的困惑。他请孙德棣来做网易CEO，自己出任CTO，用更多的经历来思考公司的问题。网易的基础其实已经打下了，但未来的路如何走？丁磊心累还是一团迷雾，他利用卸任CEO的空闲，学习，反思，考察，慢慢得到了自己的答案。而此时，公司的状况在解决了内忧之后也得到了好转。<br>这里丁磊的沉思决定了网易后面10几年的快速发展，这次沉思是珍贵的。丁磊结合了传统企业和互联网企业进行思考，思考互联网企业的核心是什么？企业如何能够活下去？什么的企业是有高价值的？企业应该如何管理？互联网企业如何平衡好投入与收益？<br>无疑他的回答就是，企业的存在是为了满足用户的需求，而企业的核心是产品，企业活下去的重要源头是要有盈利的产品。免费产品和收费产品都是互联网产品的一部分，免费产品提供流量和用户基数，收费产品利用免费产品的口碑提供效益，维持企业发展和进步。产品，需求，获利，免费和收费结合，应该就是其思考的结果，但其思考的深度远不止如此，其是对过去数年来创业经验，数十年来企业发展，数百年来人类想法的整合，最后形成其自己的思维财富。除了他自己，谁也说不出来他到底想了什么，想到了什么。<br>思考并不能得到最后的结果，但网易要做什么样的产品才能获利，才能生存下去呢？丁磊通过他的调查发现，门户的广告收入其实并不理想，而且受其他产业和经济形势影响巨大，并不能成为企业盈利的核心支撑。真正稳定的收入来自人必须被解决的需求，而人的娱乐是人最愿意花钱的地方。那是刚好移动开展短信业务，虽然一天短信只有4分钱好赚，丁磊依然觉得这是一个收益的好点子，但短信业务容易被模仿，而且技术难度不高，不能称为网易长期的营业核心。丁磊想到了娱乐，网络娱乐的方式：网络游戏。最开始他也是和邮箱一样，想着代理国外的游戏，但无奈，别人不看好中国市场，做不下去，丁磊一下决心，便开始自行研发。通过前期的收购一家小企业积累技术，然后就开始了国产游戏研发之路。<br>游戏的布局虽然开始烧钱很凶，也不盈利， 而且第一次的作品《大话西游》失败了，但丁磊认准了，只要是好的产品肯定就有市场空间，紧接着开发《大话西游2》，虽然外界的报到很多是负面的，员工也没有信心，但是丁磊的思想是超前的，他知道门户的盈利并不能支撑一家公司的发展，一个公司想要活下来，就不用去在乎到底是不是门户网站，而要在乎是不是抓住了用户的需求。时间证明了丁磊，《大话西游2》非常成功，短信和门户收费业务也不错，三足鼎立之势形成，虽然一强二弱，但是有限的多元化带给公司足够的健壮性。</p>
+<p>成熟和未知<br>游戏获得了成功，网易逐渐成长，网易总算成为了一家真正意义上的企业，产品也很丰富，邮箱，门户，游戏。从2002年后，网易的股价稳步上升，体现了其战略布局完善+适当管理+技术储备+人才储备带来的丰厚回报。网易和丁磊都从失败中走了出来，开始前进，开始走向成熟！<br>从2002年到2017年，网易的下一个关口在哪里呢？在准备16年中，网易做过很多尝试，但是基本上还是2002的老底子上发展的，其业务的核心还是游戏。门户的广告和短信的收益也早就淘汰了。只有游戏盈利的网易，一旦游戏方面出现了问题，对网易带来的风险是巨大的。网易很早就成为了全球最大的手机游戏商，但是他似乎除了游戏，就没有另外的核心产品了。<br>战略定后，网易依旧在摸索中前进。网易在产品上不断尝试。如何将邮箱，游戏做好？用户还有没有其他的需求？如何开发出优秀的游戏？如何留住人才？如何招来人才？当外部环境改变了，出现了新的事物的时候，怎么办？<br>网易在现金流充分的时候，不断尝试将旧的产品做大做强，将新的产品做好做优。将邮箱，游戏，门户做的更好，然后尝试过电子商务，聊天泡泡，网易博客，有道搜索，有道翻译，这些产品，不能说不好，但是有的成功了，有的失败了，每一个都要结合当时的情况去看，去分析。<br>有的人将有些产品的失败归因与丁磊往往在不必要的时候投入，太过保守了。这点我是不赞同的。丁磊自己就说过他是怕创新的，因为他不知道这个东西会变成什么样，一个新事物的诞生会给网易带来什么样的影响，所以网易很多时候都是观望，当觉得对这个东西有了一定的认识之后，才开始投入。保守并不一定是不好，网易已经成熟了，守成成为网易的第一要务。有些事情并不是说加大投入就一定会成功，网易决定放弃也不一定是因为太花钱，而是在权宜之后，才决定放弃的。因此虽然说网易遇到过很多机会，但是都没有做的很强，其核心业务从来都没有变过，依旧是游戏。网易做的这些尝试都是在探索用户的需求，以及积累自己的经验，网易依旧还是游戏的领头羊。<br>网易的产品总是具有鲜明的特色和风采，也基本是一脉相承的，这是丁磊的风格。这点即好，也不好。守成有余，拓新不足。但是网易的各个产品都具有共同的特性，可以通过其产品线来看网易做过的各种尝试。<br>人说看一个人要听其言，观其行。对待网易也可以这样。<br>听丁磊说什么，听网易职员说什么，听网易用户说什么。<br>观察网易的行为，产品布局的行为，困难时期的行为，领先时候的行为。<br>这些的分析没有不成功的。</p>
+<p>未完待续：</p>
+<pre><code>1996-2017年全球经济和互联网情况调查（太难，命题小一些更好，主要针对对互联网有影响的大事件就好了）
+网易历史级产品：邮箱，门户，游戏进行分析
+网易失败产品：搜索，泡泡等进行分析
+网易产品线图
+组织角度分析网易成长
+网易财报2000-2017
+</code></pre>
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/09/24/闭关两月出行之得/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="huang">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="huangdao">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2019/09/24/闭关两月出行之得/" itemprop="url">
+                  闭关两月出行之得
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-09-24T00:39:43+08:00">
+                2019-09-24
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>总<br>很久没有出门了，也很久没有与厉害的人作深入得交流了，这两天出了次门。看了看同学，朋友和老师，感受了不一样的想法和世界，我想得和做的都离别人太远，离一个优秀的自己太远。我一直被自己困住，被自己的想法困在原地。</p>
+<p>认真处理关键得细节<br>然而被老师问了一个问题，提了一个想法，我做自己喜欢得事情这么多年，依旧很有活力，去参加同学会，他们都已经老得不行了，而我还是这样。老师做事总是很有条理，很有工程得样子。做项目是这样，做自己感兴趣得事情是这样，做未来得事情是这样。他做一件事情就做得很认真，很好。不在意很多无关紧要得细节，而把自己得眼睛放在这件事能不能做成的细节上，至于其他的细节，往往采取简单有效得方法去解决，这种做事得态度是值得我学习得，把重心放在任务完成得关键点上面，而对于其他得细节得话，想一个办法解决就是了。<br>所谓得认真，并不是所有事情都认真，而是关键点认真，而是不认真就会失败得认真。而对于其他得并不值得认真得地方，又何必认真呢？如果认真，岂不是耗费自己得精力，所以啊，人要将自己得精力集中起来，处理自己关键得，核心得问题。而不是在很多没必要在意得地方去耗费自己得精力。</p>
+<p>做自己得喜欢得事情<br>老师问我以后想做什么，我說不确定，可能以后去当一名程序员，老师又问我喜欢编程吗？然后我說还行，一直在学习。我又說我自己做一件事，总是很谨慎，怕没有作用。老师便指出了：你之所以谨慎，是不自信啊。你之所以谨慎，是因为你并没有喜欢这个事情到疯狂啊。我当初就是想编程将流体力学实现出来，所以就疯狂得去做，日日夜夜。想出国就出国了，想办公司就辞去教职了。别人看我都說我疯了，但是其实我只是一直做自己喜欢得事情。我在30岁左右都迷茫，一直到我办了自己的公司，发现自己就是喜欢不被人管得生活，喜欢自由自在得生活，从此我才找到的真正得重心，人就是要一直做自己喜欢得事情，才能做得开心，做的持久。否则得话，做自己不开心得事情一辈子，岂不是很无趣。<br>我也一直在想什么是自己喜欢做的事情。读书我挺喜欢的，编程我也挺喜欢，有时很有成就感，读书也是,很多东西我都很喜欢啊。但是我始终没找到一个能点燃我内心激情得东西。我时常觉得个人得生活应该有着特别得意义。所以我总是在犹豫，在纠结，在徘徊，其实很多东西都能引发我内心的获得感，但是其实我在很多东西上都尝试了自己得获得感，所以我在各种获得感之间纠结，而不像老师那时候选择很少，所以选了一个，就一直做了下去。其实我也一样，如今的我，选择程序员是多么自然得决定啊，其实不用纠结，多去实践，多学习，自然就知道自己得路怎么走了。</p>
+<p>生活是随性的，做事是认真的<br>生活就是这样，过得开心就行，多随意一些。<br>做事却不是，做事如果随性得话，容易失败，这样反而不开心。所以做事得话，做的成功才能开心。而成功得关键在于对关键细节的处理。</p>
+<p>认真做啊。我给自己那么多学习得东西，点燃内心的激情吧。</p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/09/24/新的开始/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="huang">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="huangdao">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2019/09/24/新的开始/" itemprop="url">
+                  新的开始
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-09-24T00:37:25+08:00">
+                2019-09-24
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>以前一直看看这个，看看那个，数据挖掘，机器学习，Web安全，流体力学，产品经理，社会调查，都看了看，但是自己一直没有专门针对某个方向深入的，疯狂的挖掘下去，这其实并不好，导致自己一直浮在表面，看似什么都懂，但是一问深，其实都是个半吊子。<br>因此，必须做出改变，就某一个方面，用心学习，疯狂学习，疯狂实践，将自己的技能水平提高上来，而不是东一下，西一下，最后平平于事。<br>改变就从今日开始：<br>以数据挖掘+机器学习为主，再辅助以每日的各项读书，锻炼，思考计划。<br>将自己的姿势水平拔高拔高</p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/09/24/《重构-改善既有代码的设计》读书总结/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="huang">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="huangdao">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2019/09/24/《重构-改善既有代码的设计》读书总结/" itemprop="url">
+                  《重构》读书总结
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-09-24T00:36:01+08:00">
+                2019-09-24
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>2019-09-20<br>重构代码的根本意义在于 把机器可以看懂的语言，变得人也可以花费比较低的精力去维护。因为代码是随着需求不断变动的，所以必须要可以被人很好的维护。而重构的意义就是让 难维护的代码变得很易于维护，从而降低 人后续开发和维护的成本，提高生产效率。如果一个代码从此再也不需要更改和维护，那是没有重构他的必要的。<br>重构代码，首先识别坏味道的代码，然后运用工具，将代码的味道改变。<br>重构的过程应该是，提交一次，修改一处，测试一次，如此迭代循环。</p>
+<p>代码的坏味道排序：</p>
+<ol>
+<li>神秘命名（变量，函数，类别的名称，需要让使用的人很简单的知道这个内容的含义。如果无法抽象出来，很可能是 内容需要重构）</li>
+<li>重复代码（可以看见很多重复的代码，这样的时候往往需要抽象逻辑，进行函数化）</li>
+<li>过长函数 </li>
+<li>累赘的元素，过长参数列表（参数是否应该合并）</li>
+<li>全局数据 （使用方便，维护坑死，无法保证数据的一致性，无法找到何地方进行了变量的修改）</li>
+<li>可变数据 （数据多处修改，难以维护）</li>
+<li>发散式变化 、散弹枪修改和依恋情节 （模块解耦较差，导致一处变化，多处修改）</li>
+<li>数据泥团（数据思路不清）</li>
+<li>循环语句 （pipe化 和 map、apply化）</li>
+<li>临时字段 </li>
+<li>过大的类，异曲同工的类</li>
+<li>注释</li>
+</ol>
+<p>重构办法很多，但目的都是将 代码改的让人好懂，易懂。别急着为效率担心，先看得懂，再优化。<br>主要方法有：提炼函数，变量，改名，改参数，组合，拆分，封装，搬移，重组数据，简化条件逻辑，重构API,处理继承关系。</p>
+<p>内容虽多，也可精炼，关键还是要实践！<br>接下来增加一些开发的学习，如此可以加强自己代码也！</p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/09/24/《人月神话》读书总结/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="huang">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="huangdao">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2019/09/24/《人月神话》读书总结/" itemprop="url">
+                  《人月神话》读书总结
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-09-24T00:35:44+08:00">
+                2019-09-24
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>2019-09-22<br>此书主要描述的是编程系统产品行业的一些现场，约束和解决办法。本书的核心要点就是 软件开发 是一件很难的事情，尤其是大规模协同开发。<br>其中有一些核心要点，可以仔细回味回味。</p>
+<ol>
+<li>编程系统产品是个人独立开发使用的程序的9倍。软件产品化是3倍，构建成系统又是3倍。</li>
+<li>编程让人快乐。主要是创造力、有用性、想象力、独特性、思维性。</li>
+<li>难点：追求完美、有些目标是别人设定的、艰苦、越接近成功完成越慢、过时。</li>
+<li>缺少合理的时间进度 是项目延期的主要原因</li>
+<li>某些任务无法在不损害结果的情况下加快速度。</li>
+<li>编程人员容易乐观</li>
+<li>思维存在缺陷，总会有bug</li>
+<li>人月是危险的估算，人员数量和时间并不是可以相互替换的。</li>
+<li>增加人员，会引发额外工作量：任务重新分配、中断、培训和相互沟通。<br>10.进度安排，1/3计划，1/6编码，1/4构件测试，1/4系统测试<br>11.Brooks法则：为进度落后的项目增加人手，只会使进度更加落后。</li>
+<li>优秀的程序员的生产率是较差程序员的10倍。</li>
+<li>小型、精干的队伍是最好的，思绪尽可能少</li>
+<li>两个人团队，其中一人是领导者，是最佳的人员使用方法。</li>
+<li>对于大型系统而言，小型精干的队伍太慢了。</li>
+<li>一个团队，应该像外科手术队伍那样。</li>
+<li>概念的完整性是系统设计中最重要的考虑因素。</li>
+<li>好的产品应该在功能性和理解性上做取舍，而不仅仅是丰富的功能。</li>
+<li>设计必须由一个人或者具有共识的小团队来完成。</li>
+<li>大型项目，体系结构和具体实现分离 是获得概念完整性的有力方法。</li>
+<li>尽早交流和持续沟通使得设计人员有较好的成本意识，开发人员对设计有信心。</li>
+<li>交流，项目工作手册，组织架构对于项目至关重要。<br>23.程序规模越大，时间越长，指数为1.5，而不是线性的。</li>
+<li>高级语言和交互式编程 提高了开发效率</li>
+</ol>
+<p>此书是好书，但对于目前的我而言，是一本知识层面的指导书籍，拓展眼界用的。其内容只有涉及到开发者方面的，我比较有认识和感知。而涉及结构设计以及PM,文档化这块，其实我的感知并不是很清楚。<br>估计要随着我项目经验的增加，和环境的改变，才会认识的更加深刻吧。</p>
 
           
         
