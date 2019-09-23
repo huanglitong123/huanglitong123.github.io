@@ -90,20 +90,16 @@
 
 
 
-<meta name="description" content="测试hexo特性哈哈哈">
+<meta name="description" content="IDL对于遥感影像的处理使用是非常方便的，这里主要总结一些使用技巧方面的。 nc文件的读取PRO nc_open;定义文件路径MyRootDir=’E:\Documents\Desktop\’MyRootDir2=’F:\huang\课程\海洋数值模拟\Aqua\CHL\2015\’MyRootDir3=’E:\nc_aqua_30\test\’MyRootDir5=’E:\nc_snpp_sst">
 <meta property="og:type" content="article">
-<meta property="og:title" content="test">
-<meta property="og:url" content="http://yoursite.com/2017/04/29/test/index.html">
+<meta property="og:title" content="huangdao">
+<meta property="og:url" content="http://yoursite.com/2019/09/24/IDL使用总结/index.html">
 <meta property="og:site_name" content="huangdao">
-<meta property="og:description" content="测试hexo特性哈哈哈">
-<meta property="og:image" content="http://i.meizitu.net/2017/02/10a01.jpg">
-<meta property="og:image" content="http://file.cc98.org/uploadfile/2017/4/20/14134139448.jpg">
-<meta property="og:image" content="http://file.cc98.org/uploadfile/2017/4/20/14134141296.jpg">
-<meta property="og:updated_time" content="2017-05-03T02:12:57.000Z">
+<meta property="og:description" content="IDL对于遥感影像的处理使用是非常方便的，这里主要总结一些使用技巧方面的。 nc文件的读取PRO nc_open;定义文件路径MyRootDir=’E:\Documents\Desktop\’MyRootDir2=’F:\huang\课程\海洋数值模拟\Aqua\CHL\2015\’MyRootDir3=’E:\nc_aqua_30\test\’MyRootDir5=’E:\nc_snpp_sst">
+<meta property="og:updated_time" content="2019-09-23T16:10:56.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="test">
-<meta name="twitter:description" content="测试hexo特性哈哈哈">
-<meta name="twitter:image" content="http://i.meizitu.net/2017/02/10a01.jpg">
+<meta name="twitter:title" content="huangdao">
+<meta name="twitter:description" content="IDL对于遥感影像的处理使用是非常方便的，这里主要总结一些使用技巧方面的。 nc文件的读取PRO nc_open;定义文件路径MyRootDir=’E:\Documents\Desktop\’MyRootDir2=’F:\huang\课程\海洋数值模拟\Aqua\CHL\2015\’MyRootDir3=’E:\nc_aqua_30\test\’MyRootDir5=’E:\nc_snpp_sst">
 
 
 
@@ -131,13 +127,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2017/04/29/test/"/>
+  <link rel="canonical" href="http://yoursite.com/2019/09/24/IDL使用总结/"/>
 
 
 
 
 
-  <title>test | huangdao</title>
+  <title> | huangdao</title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -276,7 +272,7 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/04/29/test/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/09/24/IDL使用总结/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="huang">
@@ -297,7 +293,7 @@
             
             
               
-                test
+                
               
             
           </h1>
@@ -312,8 +308,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-04-29T22:11:11+08:00">
-                2017-04-29
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-09-24T00:10:56+08:00">
+                2019-09-24
               </time>
             
 
@@ -347,7 +343,50 @@
       
 
       
-        <h2 id="测试hexo特性"><a href="#测试hexo特性" class="headerlink" title="测试hexo特性"></a>测试hexo特性</h2><p>哈哈哈<br><img src="http://i.meizitu.net/2017/02/10a01.jpg" alt="美女"><br><img src="http://file.cc98.org/uploadfile/2017/4/20/14134139448.jpg" alt="美女2"><br><img src="http://file.cc98.org/uploadfile/2017/4/20/14134141296.jpg" alt="美女3"></p>
+        <p>IDL对于遥感影像的处理使用是非常方便的，这里主要总结一些使用技巧方面的。</p>
+<p>nc文件的读取<br>PRO nc_open<br>;定义文件路径<br>MyRootDir=’E:\Documents\Desktop\’<br>MyRootDir2=’F:\huang\课程\海洋数值模拟\Aqua\CHL\2015\’<br>MyRootDir3=’E:\nc_aqua_30\test\’<br>MyRootDir5=’E:\nc_snpp_sst\’<br>MyRootDir4=’i:\nc\’<br>;遍历文件夹<br>filearr = file_search(MyRootDir,’*.nc’,count=num);<br>  FOR fileindex=0,num-1,1 DO BEGIN<br>    print ,filearr[fileindex]<br>    nid = ncdf_open(filearr[fileindex], /nowrite )<br>    ; inquire about this file; returns structure<br>    file_info = ncdf_inquire( nid )<br>    ; print out the dimensions of this file<br>    FOR dimid=0, file_info.ndims -1 DO BEGIN<br>      ncdf_diminq, nid, dimid, name, size<br>      print, ‘ —&gt; dimension ‘ + name  + ‘ is: ‘, size<br>    ENDFOR</p>
+<pre><code>FOR varid=0, file_info.nvars-1 DO BEGIN
+  ; inquire about the variable; returns structure
+  var = ncdf_varinq( nid, varid )
+  print,&apos;var is &apos;,var
+  print,&apos;========================&apos;
+  ;read all attributes
+  FOR var_att_id=0,var.natts -1 DO BEGIN
+    att_name = ncdf_attname( nid, varid, var_att_id )
+    print,&apos;attname is &apos;,att_name
+    ncdf_attget, nid, varid, att_name, tematt
+    print,string(tematt)
+  ENDFOR
+ENDFOR
+parentId = NCDF_GROUPSINQ(nid)
+FOR num=0,(size(parentId))(1) -1 DO BEGIN
+  parentName = NCDF_GROUPNAME(parentId[num])
+  print, string(num) +&apos; ---&amp;gt; parent group Name &apos; + parentName 
+ENDFOR
+num = 2   
+
+;read sst
+sstid = ncdf_varid(parentId[num], &apos;chlor_a&apos;)
+ncdf_varget,parentId[num], sstid, sst
+landindex=where(sst eq min(sst))
+sst[landindex]=-1
+
+landindex2=where(sst ge 15)
+sst[landindex2]=15
+sst=reverse(sst,1)
+;sst2=sst[6960:7680,2640:3120]
+Img=image(sst,rgb_table=77,title=filearr(fileindex),grid_units=1,POSITION=[0.1,0.2,0.9,0.9])
+xaxis=axis(&apos;X&apos;,LOCATION=[0,0],AXIS_RANGE=[110,140],MINOR=0, MAJOR=10,COORD_TRANSFORM=[110,30.0/720.0],title=&apos;Longitude(°)&apos;)
+yaxis=axis(&apos;Y&apos;,LOCATION=[0,0],AXIS_RANGE=[20,40],MINOR=0, MAJOR=7,COORD_TRANSFORM=[20,20.0/480.0],title=&apos;Latitude(°)&apos;)
+;xaxis=axis(&apos;X&apos;,LOCATION=[0,0],AXIS_RANGE=[-180,180],MINOR=0, MAJOR=19,COORD_TRANSFORM=[-180,360.0/4096.0],title=&apos;Longitude(°)&apos;)
+;yaxis=axis(&apos;Y&apos;,LOCATION=[0,imap0],AXIS_RANGE=[-90,90],MINOR=0, MAJOR=7,COORD_TRANSFORM=[-90,180.0/2048.0],title=&apos;Latitude(°)&apos;)
+c1 = COLORBAR(TARGET=Img, ORIENTATION=0,TITLE=&apos;(K) &apos;,POSITION=[0.1,0.1,0.9,0.15])
+;Img.save,filearr(fileindex)+&apos;.bmp&apos;
+</code></pre><p>  ENDFOR<br>END<br>以上是一个复杂的nc文件读取的案例，主要使用的是oceancolor上面的nc文件。<br>一个nc文件的主要框架是部分变量+Group数据，有时候数据保存在变量里（这也是大部分的nc文件思路），一般使用ncdf_varid就解决了（这样的解决思路网络上都有）。</p>
+<p>nid = ncdf_open(filearr[fileindex], /nowrite )<br>chlid = ncdf_varid(nid, ‘chlor_a’)<br>但还有时候会保存在Group里面，通常我们可以发现文件大小挺大，但是利用ncdf_varid就是找不到数据，这时候需要看文件的数据是不是保存在了Group里面了。通过查询IDL官方文档，我发现了NCDF_GROUPSINQ，NCDF_GROUPNAME这两个函数，例子如下。</p>
+<p>parentId = NCDF_GROUPSINQ(nid)<br>FOR num=0,(size(parentId))(1) -1 DO BEGIN<br>  parentName = NCDF_GROUPNAME(parentId[num])<br>  print, string(num) +’ —&gt; parent group Name ‘ + parentName<br>ENDFOR<br>IDL有一些细节，参数需要自己注意，大家可以自己去查文档，我这里面主要是给出思路和关键词，附录的资料大家可以自己查看。</p>
+<p>matlab对比：<br>IDL读取的操作相对于matlab而言就太复杂了，matlab只需要简单的命令就能将数据读取出来，那为啥还要用IDL呢？因为IDL画图，以及遥感数据处理的众多源代码都是IDL写的，IDL在遥感处理上比较有群众基础和技术积累，所以IDL一直在使用。大家可以通过附录的链接进行对比分析。<br>附录：<br>matlab<br><a href="https://cn.mathworks.com/help/matlab/ref/ncread.html" target="_blank" rel="external">https://cn.mathworks.com/help/matlab/ref/ncread.html</a><br><a href="https://cn.mathworks.com/help/matlab/import_export/importing-network-common-data-form-netcdf-files-and-opendap-data.html" target="_blank" rel="external">https://cn.mathworks.com/help/matlab/import_export/importing-network-common-data-form-netcdf-files-and-opendap-data.html</a><br><a href="https://cn.mathworks.com/help/matlab/ref/ncdisp.html" target="_blank" rel="external">https://cn.mathworks.com/help/matlab/ref/ncdisp.html</a><br>IDL<br><a href="http://malagis.com/idl-remote-sensing-reads-netcdf.html" target="_blank" rel="external">http://malagis.com/idl-remote-sensing-reads-netcdf.html</a><br><a href="https://www.harrisgeospatial.com/docs/NCDF_GROUPNAME.html" target="_blank" rel="external">https://www.harrisgeospatial.com/docs/NCDF_GROUPNAME.html</a></p>
+<p>颜色表<br>通常我们会利用IDL进行作图，这样就离不开使用IDL自带的颜色表。IDL颜色表不仅多，而且可以自己定制，大家只要学会如何操作即可。<br>我主要讲一点，IDL颜色表的操作要优于matlab，我通过对比发现，matlab颜色表不仅少，而且不会自动调节，只会根据最大，最小值，然后间断颜色，不像IDL会根据数据分布来进行颜色表区分，使得数据的区域分布显现的更好，所以如果颜色表作图，更推荐IDL。<br>附录:<br><a href="http://malagis.com/idl-color-table.html" target="_blank" rel="external">http://malagis.com/idl-color-table.html</a></p>
 
       
     </div>
@@ -384,14 +423,18 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2019/09/24/统计学习方法-第三四章k近邻和朴素贝叶斯法习题/" rel="next" title="">
+                <i class="fa fa-chevron-left"></i> 
+              </a>
+            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2017/05/16/2des总结/" rel="prev" title="2des总结">
-                2des总结 <i class="fa fa-chevron-right"></i>
+              <a href="/2019/09/24/计划力和执行力/" rel="prev" title="">
+                 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -439,17 +482,8 @@
       
 
       
-        <ul class="sidebar-nav motion-element">
-          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
-            文章目录
-          </li>
-          <li class="sidebar-nav-overview" data-target="site-overview">
-            站点概览
-          </li>
-        </ul>
-      
 
-      <section class="site-overview sidebar-panel">
+      <section class="site-overview sidebar-panel sidebar-panel-active">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/images/avatar.gif"
@@ -493,22 +527,6 @@
 
       </section>
 
-      
-      <!--noindex-->
-        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
-          <div class="post-toc">
-
-            
-              
-            
-
-            
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#测试hexo特性"><span class="nav-number">1.</span> <span class="nav-text">测试hexo特性</span></a></li></ol></div>
-            
-
-          </div>
-        </section>
-      <!--/noindex-->
       
 
       

@@ -1,0 +1,716 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next mist use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.1" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="Hexo, NexT" />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.1.1" />
+
+
+
+
+
+
+<meta name="description" content="剑指offer第二章：面试需要的基础知识 总结2.1 面试官谈基础知识编程语言：C++的基础知识，例如面向对象的特性，构造函数，内存使用管理数据结构：数组，字符串，链表，树，栈（和递归联系紧密）和队列（广度优先遍历算法）算法和数据操作：递归和循环，查找和排序，回溯法，动态规划和贪婪算法，位运算 2.2 编程语言开发通常使用的有C++，Java，C#等语言，我选择做算法方面，应该首先以Python作">
+<meta property="og:type" content="article">
+<meta property="og:title" content="huangdao">
+<meta property="og:url" content="http://yoursite.com/2019/09/24/剑指offer第二章面试需要的基础知识总结/index.html">
+<meta property="og:site_name" content="huangdao">
+<meta property="og:description" content="剑指offer第二章：面试需要的基础知识 总结2.1 面试官谈基础知识编程语言：C++的基础知识，例如面向对象的特性，构造函数，内存使用管理数据结构：数组，字符串，链表，树，栈（和递归联系紧密）和队列（广度优先遍历算法）算法和数据操作：递归和循环，查找和排序，回溯法，动态规划和贪婪算法，位运算 2.2 编程语言开发通常使用的有C++，Java，C#等语言，我选择做算法方面，应该首先以Python作">
+<meta property="og:updated_time" content="2019-09-23T16:09:09.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="huangdao">
+<meta name="twitter:description" content="剑指offer第二章：面试需要的基础知识 总结2.1 面试官谈基础知识编程语言：C++的基础知识，例如面向对象的特性，构造函数，内存使用管理数据结构：数组，字符串，链表，树，栈（和递归联系紧密）和队列（广度优先遍历算法）算法和数据操作：递归和循环，查找和排序，回溯法，动态规划和贪婪算法，位运算 2.2 编程语言开发通常使用的有C++，Java，C#等语言，我选择做算法方面，应该首先以Python作">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Mist',
+    sidebar: {"position":"left","display":"post","offset":12,"offset_float":0,"b2t":false,"scrollpercent":false},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2019/09/24/剑指offer第二章面试需要的基础知识总结/"/>
+
+
+
+
+
+  <title> | huangdao</title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">huangdao</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/09/24/剑指offer第二章面试需要的基础知识总结/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="huang">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="huangdao">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-09-24T00:09:09+08:00">
+                2019-09-24
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>剑指offer第二章：面试需要的基础知识 总结<br>2.1 面试官谈基础知识<br>编程语言：C++的基础知识，例如面向对象的特性，构造函数，内存使用管理<br>数据结构：数组，字符串，链表，树，栈（和递归联系紧密）和队列（广度优先遍历算法）<br>算法和数据操作：递归和循环，查找和排序，回溯法，动态规划和贪婪算法，位运算</p>
+<p>2.2 编程语言<br>开发通常使用的有C++，Java，C#等语言，我选择做算法方面，应该首先以Python作为学习对象。因此这里的语言知识暂且略过。</p>
+<p>2.2.1 C++<br>面试题1：赋值运算符函数 略</p>
+<p>2.2.2 C<br>面试题2：实现Singleton模式 略</p>
+<p>2.3 数据结构<br>2.3.1 数组<br>面试题3：数组中重复的数字，输入长度为n数组，数字都为0-n-1，输出任意一个重复的数字</p>
+<p>思路：</p>
+<p>对数组排序，然后从头到位开始扫描 时间复杂度O(nlogn)<br>优化时间<br>哈希表解决 时间复杂度O(n)空间复杂度O(n)<br>不降低时间同时优化空间，通过优化结构，减少计算来实现<br>根据特性优化<br>发现题目中有一个特性：长度为n，数字都为0-n-1，这个特性应该就是突破口<br>解法：从头到尾对数组每个数字进行扫描，利用下标i和数字m是否相同来判断是否交换数字m和在位置m的数字。重复比较，当一样时候，比较下一项。如果发现某一项一样，即找到结果。<br>时间复杂度O(n)空间复杂度O(1)<br>测试：</p>
+<p>包含1个或多个重复<br>不包含重复数字<br>无效测试用例（空，包含超出条件的值）<br>改题：输入长度为n+1数组，数字都为1-n，输出任意重复数字，要求：不修改数组<br>思路：</p>
+<p>辅助数组，数字是什么，就赋值到什么下标的，当发现重复，解决。时间复杂度O(n)空间复杂度O(n)<br>n+1个数，1-n，必然所有的数都出现了一遍，统计数字出现的个数很重要，利用二分的想法进行统计。时间复杂度O(nlogn),空间复杂度O(1).(时间换空间)。缺点：如果有多个重复的数字并且很巧，会导致数字不能识别出来。测试案例一样。<br>面试题4：二维数组中的查找，输入一个二维数组，每一行从左到右递增，每一列从上到下递增，完成一个函数，输入一个这个的二维数组和一个整数，判断数组中是否含有该整数。</p>
+<p>思路：实例分析法<br>1 2 8 9<br>2 4 9 12<br>4 7 10 13<br>6 8 11 15</p>
+<p>常规分析法<br>从数组中选取一个数字，分3种情况来分析，相等时结束，小于要查找的数字，在右边或者下边，大于要查找的数字，在左边或者上边。这样的分析导致区域重叠且不规则，问题变得很复杂。<br>之所以复杂，在于下一次要查找的是两个重叠的区域，太复杂。<br>新思路<br>变化思路，从某一个角地方开始切入，这样可以减少一个区域，例如右上角，不存在右边和上边，这样小于要查找的数字的时候，在下边，大于的时候，在左边。（矩阵是对称的的，因此右上和左下是一样的）<br>测试：</p>
+<p>包含数字，查找数字可能是最大最小，中间值<br>不包含查找的数字<br>特殊测试<br>2.3.2 字符串<br>C++ 中字符串具有一些特性，例如最后为\0，字符串的修改等（这里不怎么关注）。</p>
+<p>面试题5：替换空格，实现函数将字符串中的每个空格替换为”%20”.<br>思路：</p>
+<p>直观思路是从头到尾扫描，碰到空格字符的时候进行替换，将空格替换，后面的字符进行后移。这样会造成后面的字符重复移动，不能一次到位，造成时间效率低下。时间O(n^2)<br>反过来思考，为什么要从头开始替换呢？完全可以从末尾开始替换，事先根据空格的数量计算好新建字符串的长度，然后从后面开始扫描，碰到空格则替换，不是空格就复制。 时间复杂度O(n)<br>测试：</p>
+<p>输入包含空格，最前最后，中间，连续空格<br>没有空格<br>特殊测试<br>相关题目：<br>两个已经排序的数组，将第二个插入第一个。<br>和上题思路一样，从第一个数组的两个数组长度的总和开始向前插，可以提高效率。</p>
+<p>2.3.3 链表<br>链表的创建，插入节点，删除节点等。<br>面试题6：从尾到头打印链表，输入一个链表的头街头，从尾到头打印。</p>
+<p>思路：</p>
+<p>简单思路，指针反转，改变方向就可以了<br>如果不修改原始数据，利用递归（如果层级很深，可以存在函数调用栈溢出）或者栈数据结构就可以了<br>2.3.4 树<br>面试时候通常考试的是二叉树，即每个节点最多只能有两个子节点。二叉树中最重要的操作是遍历，分为前序遍历，中序遍历，后序遍历。三种遍历都有递归和循环两种方法，递归要比循环简洁，这6种最好都掌握。<br>二叉树有很多特例，二叉搜索树就是其中之一。其在二叉树上加了一个条件：左节点&lt;=根节点&lt;=右节点。这样的结构便于搜索。二叉树还有另外两个特例：堆(最大堆和最小堆)和红黑树（简化树的深度和结构）。</p>
+<p>面试题7：重建二叉树：输入前序遍历和中序遍历的结构，重建二叉树。假设不含重复数字。</p>
+<p>思路：</p>
+<p>根据前序和中序的特点，找到根节点和子节点，然后根据递归方法，既可以算出。<br>测试：普通测试（功能），特殊测试（适应性），特殊输入测试（非法结果，空输入）</p>
+<p>面试题8：二叉树的下一个节点：输入二叉树和其中一个节点，找到中序遍历的下一个节点。给予三个指针。</p>
+<p>思路：</p>
+<p>分析节点的各种情况，有没有右子树，是不是左子节点，根据不同情况，写出不同情况下的判断。<br>测试：普通，特殊（一句话：考虑实际可能的所有输入）</p>
+<p>2.3.5 栈和队列<br>栈的特点是后进先出，队列的特点是先进先出，二者互相联系互相转化互为共生。</p>
+<p>面试题9：用两个栈实现一个队列。实现添加和删除节点的函数功能。</p>
+<p>思路：</p>
+<p>添加函数功能：先用stack1保存添加的元素，当删除时，要删除的元素在stack1的最低部，利用stack2将元素转移出来，然后删除stack2的最上面元素即可。如要添加，则继续添加到stack1中。当stack2为空时，将stack1的元素弹出压入stack2.核心原理在于每个片段的逆序的逆序，导致正序。<br>同理两个队列实现栈也是同样的道理（删除最后一个前面所有，添加到队列2，然后删除最后一个，其实就是多了一个辅助空间）。<br>2.4 算法和数据操作（非常重要）<br>很多算法都可以用递归和循环来实现，通常递归的实现方法简洁，但性能不如循环。根据需求来选择方法。<br>排序和查找是考察的重要。例如：二分查找，归并排序，快速排序<br>面试题如果关于二维数组上搜索路径问题，可以尝试回溯法，用递归实现，如果不允许递归，就是栈来实现。<br>最优解的问题通常是用动态规划，自上而下的递归思路去分析，然后用自下而上的循环代码来实现。递归分析思路简洁，循环实现效率高。如果在分解子问题时候，存在特殊选择一定得到最优解，则意味着可能适用于贪婪算法（沿着某一个方向，直接找到最优解，通常需要证明）<br>位运算：与，或，异或，左移，右移</p>
+<p>2.4.1 递归和循环<br>重复计算相同的问题，可以选择递归或者循环。递归简洁，但是会存在两个问题：1. 由于调用自身，存在时间和空间的消耗，从而可能存在的栈溢出 2. 递归很多计算是重复的，损失效率</p>
+<p>面试题10：斐波那契数列：输入n，输出斐波那契数列第n项</p>
+<p>思路：</p>
+<p>简单写个递归算法，输入n，然后计算n-1，n-2.时间效率太低，随着n指数爆炸。<br>从下向上计算，保存每一步的结果，从f(0),f(1)以此类推。时间复杂度O(n)<br>还有更快的O(logn)的算法，但是涉及到矩阵运算，显得复杂。<br>拓展：青蛙跳台阶问题：斐波那契数列的变体而已。2×n的铺砖问题也是变体</p>
+<p>测试：功能测试，边界值测试，性能测试。</p>
+<p>2.4.2 查找和排序<br>查找相对而言简单写，不外乎顺序查找，二分查找，哈希表查找，二叉排列树查找。无论循环还是递归，面试者要能写出完整正确的二分查找代码。<br>排序比查找复杂，通茶要比较插入排序，冒泡排序，归并排序，快速排序等不同算法的优劣。快排的算法经常要当场实现。</p>
+<p>面试题11：旋转数组的最小数字：输入一个排序数组的旋转，其若干元素搬到数组的末尾，输出最小值。</p>
+<p>思路:</p>
+<p>遍历，时间复杂度O(n)<br>旋转特性没用到，旋转后的数组可分为两个排序的子数组，且前面数组元素均大于后面数组元素，利用二分查找思想，如果中间值大于等于左边值，将左指针移到中间位置，如果小于右边值，则右指针移动。当指针距离为1时，第二个指针就是结果。<br>特殊情况：</p>
+<p>将前0个数移动则是本身，则第一个数就是结果。<br>前中后三数相同，这是需要顺序查找。<br>测试：一定要注意特殊情况的存在，将每一种情况都考虑到。</p>
+<p>2.4.3 回溯法<br>回溯法适合多个步骤组成的问题，并且每个步骤有多个选项，不行就回溯。利用递归实现代码。</p>
+<p>面试题12：矩阵中的路径：输入一个矩阵，判断是否存在包含某一个字符串所有字符的路径</p>
+<p>思路：回溯法，回归做，简单粗暴</p>
+<p>面试题13：机器人运动范围</p>
+<p>思路：</p>
+<p>回溯法<br>为啥不遍历计算呢？反正都要走<br>2.4.4 动态规划和贪婪算法<br>如果一个大问题可以分解成小问题，分解的每个小问题也存在最优解，如果把小问题的最优解组合起来能够得到整个问题的最优解，那么我们可以应用动态规划去解决问题。<br>动态规划4大特点：</p>
+<p>求一个问题的最优解<br>整体问题的最优解是依赖各个子问题的最优解<br>这些小问题之间可能有相互重叠的更小的子问题<br>从上往下分析问题，从下往上求解问题。<br>贪婪算法解决问题时候，每一步都可以做出一个贪婪选择，基于这个选择，确定能够得到最优解，应用贪婪算法时候，需要用数学方式来证明贪婪选择是正确的。</p>
+<p>面试题14：剪绳子，输入长度n的绳子，剪成m段，求最大乘积。</p>
+<p>思路：</p>
+<p>自上而下递归，时间复杂度O(n^2)<br>自下而上递归,时间O(n)<br>贪婪算法，直接选择大于5，则剪长度为3，剩下4，则2-2.证明略。<br>2.4.5 位运算<br>位运算效率很高。一共5种：与，或，异或，左移，右移。</p>
+<p>面试题15：二进制中1的个数：输入整数，输出该数二进制表示中1的个数。</p>
+<p>思路：</p>
+<p>依次扫描二进制，从右到左，如果是1，和1做与运算，计数，如果不是1，不计数。（右移和除法效率差太多）<br>缺点:负数右移，存在前面都变为1，造成死循环。<br>换个方向，将比较的值改变，与1与运算后，将1左移，避免的死循环。<br>要点：将整数减去1，再和原整数做与运算，会把该整数最右边的1变为0.多少个1，就有多少次操作。<br>相关题目：</p>
+<p>一条语句判断整数是不是2个整数次方。二进制中是不是只有1个1，如果是，就是2个整数次方。<br>输入m和n，计算修改m的二进制表示中的多少位才能得到n。那么就是判断多少个1或者0不同。则先异或，然后统计1的个数。<br>2.5 总结<br>编程语言，数据结构，算法<br>数据结构：数组，字符串，链表，栈和递归，二叉树，队列<br>算法：二分查找，快速排序，归并排序，回溯法，最优解动态规划，贪婪算法，循环和递归的不同，自上而下递归思路，自下而上循环实现<br>位运算</p>
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+        
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2019/09/24/剑指offer第一章面试的流程总结/" rel="next" title="">
+                <i class="fa fa-chevron-left"></i> 
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2019/09/24/统计学习方法第二章感知机习题/" rel="prev" title="">
+                 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+
+      <section class="site-overview sidebar-panel sidebar-panel-active">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/images/avatar.gif"
+               alt="huang" />
+          <p class="site-author-name" itemprop="name">huang</p>
+           
+              <p class="site-description motion-element" itemprop="description"></p>
+          
+        </div>
+        <nav class="site-state motion-element">
+
+          
+            <div class="site-state-item site-state-posts">
+              <a href="/archives">
+                <span class="site-state-item-count">17</span>
+                <span class="site-state-item-name">日志</span>
+              </a>
+            </div>
+          
+
+          
+
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+        
+        
+
+        
+        
+
+        
+
+
+      </section>
+
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2019</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">huang</span>
+</div>
+
+
+<div class="powered-by">
+  由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Mist
+  </a>
+</div>
+
+
+        
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.1"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.1"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.1"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.1"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+<script type="text/javascript" src="/js/src/particle.js" count="50" zindex="-2" opacity="1" color="0,104,183"></script>
+<!-- 小红心 -->
+<script type="text/javascript" src="/js/src/love.js"></script>
+</body>
+</html>
