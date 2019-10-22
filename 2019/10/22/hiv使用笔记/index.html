@@ -90,16 +90,16 @@
 
 
 
-<meta name="description" content="2019-09-22此书主要描述的是编程系统产品行业的一些现场，约束和解决办法。本书的核心要点就是 软件开发 是一件很难的事情，尤其是大规模协同开发。其中有一些核心要点，可以仔细回味回味。  编程系统产品是个人独立开发使用的程序的9倍。软件产品化是3倍，构建成系统又是3倍。 编程让人快乐。主要是创造力、有用性、想象力、独特性、思维性。 难点：追求完美、有些目标是别人设定的、艰苦、越接近成功完成越慢">
+<meta name="description" content="coalesce 选取非空 select 去除day列方法        set hive.support.quoted.identifiers=none; select  `(day)?+.+` from kaola_decision_tmp.day_info_base 窗口函数SELECT a, SUM(b) OVER (PARTITION BY c ORDER BY d ROWS BETWE">
 <meta property="og:type" content="article">
-<meta property="og:title" content="《人月神话》读书总结">
-<meta property="og:url" content="http://yoursite.com/2019/09/24/《人月神话》读书总结/index.html">
+<meta property="og:title" content="hive使用笔记">
+<meta property="og:url" content="http://yoursite.com/2019/10/22/hiv使用笔记/index.html">
 <meta property="og:site_name" content="huangdao">
-<meta property="og:description" content="2019-09-22此书主要描述的是编程系统产品行业的一些现场，约束和解决办法。本书的核心要点就是 软件开发 是一件很难的事情，尤其是大规模协同开发。其中有一些核心要点，可以仔细回味回味。  编程系统产品是个人独立开发使用的程序的9倍。软件产品化是3倍，构建成系统又是3倍。 编程让人快乐。主要是创造力、有用性、想象力、独特性、思维性。 难点：追求完美、有些目标是别人设定的、艰苦、越接近成功完成越慢">
-<meta property="og:updated_time" content="2019-09-23T16:35:44.000Z">
+<meta property="og:description" content="coalesce 选取非空 select 去除day列方法        set hive.support.quoted.identifiers=none; select  `(day)?+.+` from kaola_decision_tmp.day_info_base 窗口函数SELECT a, SUM(b) OVER (PARTITION BY c ORDER BY d ROWS BETWE">
+<meta property="og:updated_time" content="2019-10-22T15:31:49.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="《人月神话》读书总结">
-<meta name="twitter:description" content="2019-09-22此书主要描述的是编程系统产品行业的一些现场，约束和解决办法。本书的核心要点就是 软件开发 是一件很难的事情，尤其是大规模协同开发。其中有一些核心要点，可以仔细回味回味。  编程系统产品是个人独立开发使用的程序的9倍。软件产品化是3倍，构建成系统又是3倍。 编程让人快乐。主要是创造力、有用性、想象力、独特性、思维性。 难点：追求完美、有些目标是别人设定的、艰苦、越接近成功完成越慢">
+<meta name="twitter:title" content="hive使用笔记">
+<meta name="twitter:description" content="coalesce 选取非空 select 去除day列方法        set hive.support.quoted.identifiers=none; select  `(day)?+.+` from kaola_decision_tmp.day_info_base 窗口函数SELECT a, SUM(b) OVER (PARTITION BY c ORDER BY d ROWS BETWE">
 
 
 
@@ -127,13 +127,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2019/09/24/《人月神话》读书总结/"/>
+  <link rel="canonical" href="http://yoursite.com/2019/10/22/hiv使用笔记/"/>
 
 
 
 
 
-  <title>《人月神话》读书总结 | huangdao</title>
+  <title>hive使用笔记 | huangdao</title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -272,7 +272,7 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/09/24/《人月神话》读书总结/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/10/22/hiv使用笔记/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="huang">
@@ -293,7 +293,7 @@
             
             
               
-                《人月神话》读书总结
+                hive使用笔记
               
             
           </h1>
@@ -308,8 +308,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-09-24T00:35:44+08:00">
-                2019-09-24
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-10-22T23:31:04+08:00">
+                2019-10-22
               </time>
             
 
@@ -343,31 +343,18 @@
       
 
       
-        <p>2019-09-22<br>此书主要描述的是编程系统产品行业的一些现场，约束和解决办法。本书的核心要点就是 软件开发 是一件很难的事情，尤其是大规模协同开发。<br>其中有一些核心要点，可以仔细回味回味。</p>
-<ol>
-<li>编程系统产品是个人独立开发使用的程序的9倍。软件产品化是3倍，构建成系统又是3倍。</li>
-<li>编程让人快乐。主要是创造力、有用性、想象力、独特性、思维性。</li>
-<li>难点：追求完美、有些目标是别人设定的、艰苦、越接近成功完成越慢、过时。</li>
-<li>缺少合理的时间进度 是项目延期的主要原因</li>
-<li>某些任务无法在不损害结果的情况下加快速度。</li>
-<li>编程人员容易乐观</li>
-<li>思维存在缺陷，总会有bug</li>
-<li>人月是危险的估算，人员数量和时间并不是可以相互替换的。</li>
-<li>增加人员，会引发额外工作量：任务重新分配、中断、培训和相互沟通。<br>10.进度安排，1/3计划，1/6编码，1/4构件测试，1/4系统测试<br>11.Brooks法则：为进度落后的项目增加人手，只会使进度更加落后。</li>
-<li>优秀的程序员的生产率是较差程序员的10倍。</li>
-<li>小型、精干的队伍是最好的，思绪尽可能少</li>
-<li>两个人团队，其中一人是领导者，是最佳的人员使用方法。</li>
-<li>对于大型系统而言，小型精干的队伍太慢了。</li>
-<li>一个团队，应该像外科手术队伍那样。</li>
-<li>概念的完整性是系统设计中最重要的考虑因素。</li>
-<li>好的产品应该在功能性和理解性上做取舍，而不仅仅是丰富的功能。</li>
-<li>设计必须由一个人或者具有共识的小团队来完成。</li>
-<li>大型项目，体系结构和具体实现分离 是获得概念完整性的有力方法。</li>
-<li>尽早交流和持续沟通使得设计人员有较好的成本意识，开发人员对设计有信心。</li>
-<li>交流，项目工作手册，组织架构对于项目至关重要。<br>23.程序规模越大，时间越长，指数为1.5，而不是线性的。</li>
-<li>高级语言和交互式编程 提高了开发效率</li>
-</ol>
-<p>此书是好书，但对于目前的我而言，是一本知识层面的指导书籍，拓展眼界用的。其内容只有涉及到开发者方面的，我比较有认识和感知。而涉及结构设计以及PM,文档化这块，其实我的感知并不是很清楚。<br>估计要随着我项目经验的增加，和环境的改变，才会认识的更加深刻吧。</p>
+        <p>coalesce 选取非空</p>
+<h1 id="select-去除day列方法"><a href="#select-去除day列方法" class="headerlink" title="select 去除day列方法"></a>select 去除day列方法</h1><pre><code>        set hive.support.quoted.identifiers=none;
+select  `(day)?+.+`
+from kaola_decision_tmp.day_info_base
+</code></pre><p>窗口函数<br>SELECT a, SUM(b) OVER (PARTITION BY c ORDER BY d ROWS BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW)<br>FROM T;</p>
+<p>SELECT a, AVG(b) OVER (PARTITION BY c ORDER BY d ROWS BETWEEN 3 PRECEDING AND 3 FOLLOWING)<br>FROM T;<br><a href="https://cwiki.apache.org/confluence/display/Hive/LanguageManual+WindowingAndAnalytics" target="_blank" rel="external">https://cwiki.apache.org/confluence/display/Hive/LanguageManual+WindowingAndAnalytics</a></p>
+<p>全join<br> full outer join<br>字符串拼接<br>concat<br>拼接<br>UNION ALL<br>插入select结果<br>create table query_result  as select user, login_time from user_login;<br>平均值函数，标准差<br>avg stddev<br>替换函数<br>regexp_replace(‘2016-06-05 00:00:00.0’, ‘-‘, ‘’)<br>周几<br>本周周一  date_sub(pred_date,int(date_format(pred_date,’u’)-1))<br>周几 date_format(pred_date,’u’)<br>case when pmod(datediff(from_unixtime(unix_timestamp(),’yyyy-MM-dd’), ‘1920-01-01’) - 3, 7)=0 then 7<br>                 else pmod(datediff(from_unixtime(unix_timestamp(),’yyyy-MM-dd’), ‘1920-01-01’) - 3, 7)<br>                 end</p>
+<p>case when pmod(datediff(from_unixtime(unix_timestamp(),’yyyy-MM-dd’), ‘1920-01-01’) - 1, 7)=0 then 7<br>                 else pmod(datediff(from_unixtime(unix_timestamp(),’yyyy-MM-dd’), ‘1920-01-01’) - 3, 7)<br>                 end<br>周几<br>pmod(datediff(‘#date#’, ‘2012-01-01’), 7) </p>
+<p>当前日期的最近的周二<br>date_sub(from_unixtime(unix_timestamp(),’yyyy-MM-dd’), pmod(datediff(from_unixtime(unix_timestamp(),’yyyy-MM-dd’), ‘1920-01-01’) - 5, 7))</p>
+<p>处理日期int to string ：<br> from_unixtime(cast(b.order_time/1000 as bigint), ‘yyyy-MM-dd’) as create_time<br>当前日期<br>from_unixtime(unix_timestamp(),’yyyy-MM-dd’)<br>昨天<br>date_add(from_unixtime(unix_timestamp(),’yyyy-MM-dd’),-1)<br>变量<br>set hivevar:version_name= ‘2019-01’ ;<br>${hivevar:version_name}<br>hive 时间处理函数<br><a href="https://www.cnblogs.com/wcwen1990/p/8510532.html" target="_blank" rel="external">https://www.cnblogs.com/wcwen1990/p/8510532.html</a><br><a href="https://dacoolbaby.iteye.com/blog/1826307" target="_blank" rel="external">https://dacoolbaby.iteye.com/blog/1826307</a><br>impala 时间处理函数<br><a href="https://blog.csdn.net/qq_24699959/article/details/79863664" target="_blank" rel="external">https://blog.csdn.net/qq_24699959/article/details/79863664</a></p>
+<p>1.创建表<br>drop table if exists app.test;<br>create table if not exists app.test<br>(<br>dim_day_id string comment ‘统计日期’,<br>pop_vender_id string comment ‘商家id’,<br>user_gro_type string comment ‘用户群类型’,<br>user_id string comment ‘用户id’,<br>user_ord_lv_cd string comment ‘用户级别代码’<br>) PARTITIONED BY (dt string)</p>
+<p>2.删除表<br>drop table if exists app.test;<br>3.插入数据<br>set mapred.output.compress=true;<br>set hive.exec.compress.output=true;<br>set mapred.output.compression.codec=com.hadoop.compression.lzo.LzopCodec ;<br>set io.compression.codecs=com.hadoop.compression.lzo.LzopCodec;<br>insert overwrite table app.test partition (dt=’2014-03-16’)<br>select tt.dim_day_id,tt.pop_vender_id,tt.user_gro_type,tt.user_id,tt.user_ord_lv_cd<br>from app.sources tt;<br>set mapred.output.compress=false;<br>set hive.exec.compress.output=false;<br>4.查看分区<br>show partitions app.test;<br>5.删除分区<br>alter table app.test drop if exists partition(dt=’2014-03-16’);<br>6.增加分区<br>alter table app.test add if exists partition(dt=’2014-03-17’) location ‘/app/dt=2014-03-17’;<br>7.表重命名<br>alter table app.test rename to app.test1;<br>8.load文件数据到hive表里<br>drop table if exists dev.a_03_market_coupon_cate_pici;<br>create table dev.a_03_market_coupon_cate_pici<br>(cate_cd string,<br> pici string)<br>ROW FORMAT SERDE ‘org.apache.hadoop.hive.serde2.lazy.LazySimpleSerDe’<br>WITH SERDEPROPERTIES (‘field.delim’=’\t’,’escape.delim’=’\n’,’serialization.null.format’=’’);<br>load data local inpath ‘/export/huzf/tmp.txt’ overwrite into table dev.a_03_market_coupon_cate_pici;</p>
 
       
     </div>
@@ -404,8 +391,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/09/24/IDL使用总结/" rel="next" title="IDL使用总结">
-                <i class="fa fa-chevron-left"></i> IDL使用总结
+              <a href="/2019/09/24/天池比赛血糖预测收获总结/" rel="next" title="血糖预测收获总结">
+                <i class="fa fa-chevron-left"></i> 血糖预测收获总结
               </a>
             
           </div>
@@ -414,8 +401,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2019/09/24/《重构-改善既有代码的设计》读书总结/" rel="prev" title="《重构》读书总结">
-                《重构》读书总结 <i class="fa fa-chevron-right"></i>
+              <a href="/2019/10/22/pandas常用函数/" rel="prev" title="pandas常用函数">
+                pandas常用函数 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -463,8 +450,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
+      <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/images/avatar.gif"
@@ -508,6 +504,22 @@
 
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#select-去除day列方法"><span class="nav-number">1.</span> <span class="nav-text">select 去除day列方法</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       

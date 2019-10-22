@@ -90,16 +90,16 @@
 
 
 
-<meta name="description" content="2019-09-22此书主要描述的是编程系统产品行业的一些现场，约束和解决办法。本书的核心要点就是 软件开发 是一件很难的事情，尤其是大规模协同开发。其中有一些核心要点，可以仔细回味回味。  编程系统产品是个人独立开发使用的程序的9倍。软件产品化是3倍，构建成系统又是3倍。 编程让人快乐。主要是创造力、有用性、想象力、独特性、思维性。 难点：追求完美、有些目标是别人设定的、艰苦、越接近成功完成越慢">
+<meta name="description" content="效率python 的列表 append，extend 比  pandas 的concat 速度快很多。 查看 pandas 版本   import pandas as pdpd.show_versions()pd.version    取出空值行storage_order_base_df[storage_order_base_df[u’order_count’].isnull().values==">
 <meta property="og:type" content="article">
-<meta property="og:title" content="《人月神话》读书总结">
-<meta property="og:url" content="http://yoursite.com/2019/09/24/《人月神话》读书总结/index.html">
+<meta property="og:title" content="pandas常用函数">
+<meta property="og:url" content="http://yoursite.com/2019/10/22/pandas常用函数/index.html">
 <meta property="og:site_name" content="huangdao">
-<meta property="og:description" content="2019-09-22此书主要描述的是编程系统产品行业的一些现场，约束和解决办法。本书的核心要点就是 软件开发 是一件很难的事情，尤其是大规模协同开发。其中有一些核心要点，可以仔细回味回味。  编程系统产品是个人独立开发使用的程序的9倍。软件产品化是3倍，构建成系统又是3倍。 编程让人快乐。主要是创造力、有用性、想象力、独特性、思维性。 难点：追求完美、有些目标是别人设定的、艰苦、越接近成功完成越慢">
-<meta property="og:updated_time" content="2019-09-23T16:35:44.000Z">
+<meta property="og:description" content="效率python 的列表 append，extend 比  pandas 的concat 速度快很多。 查看 pandas 版本   import pandas as pdpd.show_versions()pd.version    取出空值行storage_order_base_df[storage_order_base_df[u’order_count’].isnull().values==">
+<meta property="og:updated_time" content="2019-10-22T15:33:21.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="《人月神话》读书总结">
-<meta name="twitter:description" content="2019-09-22此书主要描述的是编程系统产品行业的一些现场，约束和解决办法。本书的核心要点就是 软件开发 是一件很难的事情，尤其是大规模协同开发。其中有一些核心要点，可以仔细回味回味。  编程系统产品是个人独立开发使用的程序的9倍。软件产品化是3倍，构建成系统又是3倍。 编程让人快乐。主要是创造力、有用性、想象力、独特性、思维性。 难点：追求完美、有些目标是别人设定的、艰苦、越接近成功完成越慢">
+<meta name="twitter:title" content="pandas常用函数">
+<meta name="twitter:description" content="效率python 的列表 append，extend 比  pandas 的concat 速度快很多。 查看 pandas 版本   import pandas as pdpd.show_versions()pd.version    取出空值行storage_order_base_df[storage_order_base_df[u’order_count’].isnull().values==">
 
 
 
@@ -127,13 +127,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2019/09/24/《人月神话》读书总结/"/>
+  <link rel="canonical" href="http://yoursite.com/2019/10/22/pandas常用函数/"/>
 
 
 
 
 
-  <title>《人月神话》读书总结 | huangdao</title>
+  <title>pandas常用函数 | huangdao</title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -272,7 +272,7 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/09/24/《人月神话》读书总结/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/10/22/pandas常用函数/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="huang">
@@ -293,7 +293,7 @@
             
             
               
-                《人月神话》读书总结
+                pandas常用函数
               
             
           </h1>
@@ -308,8 +308,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-09-24T00:35:44+08:00">
-                2019-09-24
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-10-22T23:32:53+08:00">
+                2019-10-22
               </time>
             
 
@@ -343,31 +343,28 @@
       
 
       
-        <p>2019-09-22<br>此书主要描述的是编程系统产品行业的一些现场，约束和解决办法。本书的核心要点就是 软件开发 是一件很难的事情，尤其是大规模协同开发。<br>其中有一些核心要点，可以仔细回味回味。</p>
-<ol>
-<li>编程系统产品是个人独立开发使用的程序的9倍。软件产品化是3倍，构建成系统又是3倍。</li>
-<li>编程让人快乐。主要是创造力、有用性、想象力、独特性、思维性。</li>
-<li>难点：追求完美、有些目标是别人设定的、艰苦、越接近成功完成越慢、过时。</li>
-<li>缺少合理的时间进度 是项目延期的主要原因</li>
-<li>某些任务无法在不损害结果的情况下加快速度。</li>
-<li>编程人员容易乐观</li>
-<li>思维存在缺陷，总会有bug</li>
-<li>人月是危险的估算，人员数量和时间并不是可以相互替换的。</li>
-<li>增加人员，会引发额外工作量：任务重新分配、中断、培训和相互沟通。<br>10.进度安排，1/3计划，1/6编码，1/4构件测试，1/4系统测试<br>11.Brooks法则：为进度落后的项目增加人手，只会使进度更加落后。</li>
-<li>优秀的程序员的生产率是较差程序员的10倍。</li>
-<li>小型、精干的队伍是最好的，思绪尽可能少</li>
-<li>两个人团队，其中一人是领导者，是最佳的人员使用方法。</li>
-<li>对于大型系统而言，小型精干的队伍太慢了。</li>
-<li>一个团队，应该像外科手术队伍那样。</li>
-<li>概念的完整性是系统设计中最重要的考虑因素。</li>
-<li>好的产品应该在功能性和理解性上做取舍，而不仅仅是丰富的功能。</li>
-<li>设计必须由一个人或者具有共识的小团队来完成。</li>
-<li>大型项目，体系结构和具体实现分离 是获得概念完整性的有力方法。</li>
-<li>尽早交流和持续沟通使得设计人员有较好的成本意识，开发人员对设计有信心。</li>
-<li>交流，项目工作手册，组织架构对于项目至关重要。<br>23.程序规模越大，时间越长，指数为1.5，而不是线性的。</li>
-<li>高级语言和交互式编程 提高了开发效率</li>
-</ol>
-<p>此书是好书，但对于目前的我而言，是一本知识层面的指导书籍，拓展眼界用的。其内容只有涉及到开发者方面的，我比较有认识和感知。而涉及结构设计以及PM,文档化这块，其实我的感知并不是很清楚。<br>估计要随着我项目经验的增加，和环境的改变，才会认识的更加深刻吧。</p>
+        <h1 id="效率"><a href="#效率" class="headerlink" title="效率"></a>效率</h1><p>python 的列表 append，extend 比  pandas 的concat 速度快很多。</p>
+<h1 id="查看-pandas-版本"><a href="#查看-pandas-版本" class="headerlink" title="查看 pandas 版本"></a>查看 pandas 版本</h1><blockquote>
+<blockquote>
+<blockquote>
+<p>import pandas as pd<br>pd.show_versions()<br>pd.<strong>version</strong></p>
+</blockquote>
+</blockquote>
+</blockquote>
+<h1 id="取出空值行"><a href="#取出空值行" class="headerlink" title="取出空值行"></a>取出空值行</h1><p>storage_order_base_df[storage_order_base_df[u’order_count’].isnull().values==True]</p>
+<h1 id="pandas-多行处理"><a href="#pandas-多行处理" class="headerlink" title="pandas 多行处理"></a>pandas 多行处理</h1><p>df[‘Value’] = df.apply(lambda row: my_test(row[‘a’], row[‘c’]), axis=1)</p>
+<h1 id="回滚"><a href="#回滚" class="headerlink" title="回滚"></a>回滚</h1><p>df.rolling(2).sum()</p>
+<h1 id="列转为index"><a href="#列转为index" class="headerlink" title="列转为index"></a>列转为index</h1><p>data = data.set_index([‘年份’])</p>
+<h1 id="pandas-timestamp"><a href="#pandas-timestamp" class="headerlink" title="pandas timestamp"></a>pandas timestamp</h1><p><a href="https://pandas.pydata.org/pandas-docs/version/0.23.4/generated/pandas.Timestamp.html" target="_blank" rel="external">https://pandas.pydata.org/pandas-docs/version/0.23.4/generated/pandas.Timestamp.html</a></p>
+<h1 id="去重"><a href="#去重" class="headerlink" title="去重"></a>去重</h1><p>data = data.drop_duplicates()</p>
+<h1 id="更改列名"><a href="#更改列名" class="headerlink" title="更改列名"></a>更改列名</h1><p>df.rename(columns={‘old_name’: “new name” }, inplace=True)</p>
+<h1 id="时间的加减"><a href="#时间的加减" class="headerlink" title="时间的加减"></a>时间的加减</h1><p>datetime.datetime.now().strftime(“%Y-%m-%d %H:%M:%S”)<br>day3_before = (datetime.datetime.strptime(last_date, ‘%Y-%m-%d’) - datetime.timedelta(days = 2)).strftime(‘%Y-%m-%d’)   </p>
+<h1 id="分位数"><a href="#分位数" class="headerlink" title="分位数"></a>分位数</h1><p>DataFrame.quantile(q=0.5, axis=0, numeric_only=True, interpolation=’linear’)</p>
+<h1 id="填充"><a href="#填充" class="headerlink" title="填充"></a>填充</h1><p>使用其他列填充<br>df[df.contact.isnull(),’contact’] = df[‘contact2’]<br>df.fillna(0)</p>
+<h1 id="写入多个sheet"><a href="#写入多个sheet" class="headerlink" title="写入多个sheet"></a>写入多个sheet</h1><p>with pd.ExcelWriter(os.path.join(base_path,’week_acc_order<em>summary</em>‘+dates[0]+’.xlsx’)) as writer:<br>    order_summary_sheet1.to_excel(writer, index =None, sheet_name=’order’)<br>    order_summary_sheet2.to_excel(writer, index =None, sheet_name=’goods’)</p>
+<h1 id="多sheet写"><a href="#多sheet写" class="headerlink" title="多sheet写"></a>多sheet写</h1><p>with pd.ExcelWriter(os.path.join(base_path, ‘storage_order_province.xlsx’)) as writer:<br>    storage_order_province_2019.to_excel(writer, index =None, sheet_name=’2019’)<br>    storage_order_province_2020.to_excel(writer, index =None, sheet_name=’2020’)</p>
+<h1 id="排序"><a href="#排序" class="headerlink" title="排序"></a>排序</h1><p>sort_values(by=,ascending=)</p>
+<h1 id="小数转化为百分比"><a href="#小数转化为百分比" class="headerlink" title="小数转化为百分比"></a>小数转化为百分比</h1><p>data[u’线损率’] = data[u’线损率’].apply(lambda x: format(x, ‘.2%’))</p>
 
       
     </div>
@@ -404,8 +401,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/09/24/IDL使用总结/" rel="next" title="IDL使用总结">
-                <i class="fa fa-chevron-left"></i> IDL使用总结
+              <a href="/2019/10/22/hiv使用笔记/" rel="next" title="hive使用笔记">
+                <i class="fa fa-chevron-left"></i> hive使用笔记
               </a>
             
           </div>
@@ -413,10 +410,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2019/09/24/《重构-改善既有代码的设计》读书总结/" rel="prev" title="《重构》读书总结">
-                《重构》读书总结 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -463,8 +456,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
+      <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/images/avatar.gif"
@@ -508,6 +510,22 @@
 
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#效率"><span class="nav-number">1.</span> <span class="nav-text">效率</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#查看-pandas-版本"><span class="nav-number">2.</span> <span class="nav-text">查看 pandas 版本</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#取出空值行"><span class="nav-number">3.</span> <span class="nav-text">取出空值行</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#pandas-多行处理"><span class="nav-number">4.</span> <span class="nav-text">pandas 多行处理</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#回滚"><span class="nav-number">5.</span> <span class="nav-text">回滚</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#列转为index"><span class="nav-number">6.</span> <span class="nav-text">列转为index</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#pandas-timestamp"><span class="nav-number">7.</span> <span class="nav-text">pandas timestamp</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#去重"><span class="nav-number">8.</span> <span class="nav-text">去重</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#更改列名"><span class="nav-number">9.</span> <span class="nav-text">更改列名</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#时间的加减"><span class="nav-number">10.</span> <span class="nav-text">时间的加减</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#分位数"><span class="nav-number">11.</span> <span class="nav-text">分位数</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#填充"><span class="nav-number">12.</span> <span class="nav-text">填充</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#写入多个sheet"><span class="nav-number">13.</span> <span class="nav-text">写入多个sheet</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#多sheet写"><span class="nav-number">14.</span> <span class="nav-text">多sheet写</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#排序"><span class="nav-number">15.</span> <span class="nav-text">排序</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#小数转化为百分比"><span class="nav-number">16.</span> <span class="nav-text">小数转化为百分比</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
